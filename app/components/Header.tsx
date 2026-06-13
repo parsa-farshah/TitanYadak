@@ -2,13 +2,14 @@ import { ArrowLeftCircleIcon, Bars3Icon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import React from "react";
 import { AvatarComponent } from "./AvatarComponent";
+import { Plus, PlusCircle } from "lucide-react";
 
 const Header = () => {
   return (
-    <div className="px-6 relative ">
+    <div className=" relative overflow-hidden">
       <Image src="/images/bgMain.jpg" alt="background" fill />
       {/* navigation and logo and button */}
-      <div className="py-5 flex justify-between items-center relative z-10 2xl:container 2xl:mx-auto border-b-2 border-b-[#121741]">
+      <div className="py-5 flex justify-between items-center relative z-10 2xl:container 2xl:mx-auto border-b-2 border-b-[#121741] px-6">
         {/* logo */}
         <figure>
           <Image
@@ -61,10 +62,10 @@ const Header = () => {
           </section>
         </button>
       </div>
-      {/* image and text */}
-      <section className="relative z-10 mt-25 flex flex-col gap-y-5">
-        {/* text and card */}
-        <section className="flex flex-col gap-y-5 md:flex-row md:justify-between md:items-center">
+      {/* ------------------------- image and text --------------------------- */}
+      <section className="relative z-10 mt-25 flex flex-col gap-y-10 px-6">
+        {/* text header and card */}
+        <section className="flex flex-col gap-y-5 md:flex-row md:justify-between md:items-center ">
           {/* text */}
           <p className="text-white text-4xl border-r-4 border-r-secondary pr-5 font-black leading-14 md:text-5xl md:leading-20 lg:text-8xl lg:leading-32 md:w-[65%]">
             لورم <span className="text-primary">ایپسوم</span> متن ساختگی با{" "}
@@ -92,47 +93,99 @@ const Header = () => {
             </section>
           </div>
         </section>
-        {/* image */}
-        <section>
+        {/* 3 row */}
+        <section className="flex flex-col lg:flex-row-reverse lg:items-center lg:gap-12 lg:justify-center">
           {/* text */}
-          <div className="flex flex-col h-56">
-            <p>
+          <div className="flex flex-col">
+            <p className="text-[#d3d3d3] pb-3.5 ">
               لورم ایپسوم متن ساختگی با تولید سادگی لورم ایپسوم متن ساختگی با
               تولید سادگی لورم ایپسوم متن ساختگی با تولید سادگی لورم ایپسوم متن
               ساختگی با تولید سادگی
             </p>
-            <button className="px-9 py-4 relative bg-secondary overflow-hidden before:content-[] before:w-10 before:h-10 before:bg-[#03071E] before:absolute before:-left-5 before:-bottom-5 before:rotate-45 group hover:bg-primary duration-500 cursor-pointer flex">
-              <section className="flex items-center gap-2">
-                <span className="text-white text-lg font-bold group-hover:text-black duration-500">
-                  درباره ما
-                </span>
-                <ArrowLeftCircleIcon
-                  className="text-white"
-                  width={18}
-                  height={18}
-                />
-              </section>
-            </button>
+
+            {/* button */}
+            <div className="mt-6">
+              <button className="px-9 py-4 relative bg-secondary overflow-hidden before:content-[] before:w-10 before:h-10 before:bg-[#03071E] before:absolute before:-left-5 before:-bottom-5 before:rotate-45 group hover:bg-primary duration-500 cursor-pointer flex">
+                <section className="flex items-center gap-2">
+                  <span className="text-white text-sm md:text-lg font-bold group-hover:text-black duration-500">
+                    بیشتر بدانیم
+                  </span>
+                  <ArrowLeftCircleIcon
+                    className="text-white"
+                    width={18}
+                    height={18}
+                  />
+                </section>
+              </button>
+            </div>
+
+            {/* analysis */}
+            <section className="flex justify-between mt-14">
+              {/* card 1 */}
+              <div className="border-l border-l-secondary flex flex-col items-center gap-2 w-[22%]">
+                {/* top */}
+                <div className="flex">
+                  <span className="text-white text-[28px]">500</span>
+                  <Plus className="text-sm text-secondary text-[28px]" />
+                </div>
+                {/* bottom */}
+                <span className="text-center text-white">پروژه های موفق</span>
+              </div>
+              {/* card 2 */}
+              <div className="border-l border-l-secondary flex flex-col items-center gap-2 w-[22%]">
+                {/* top */}
+                <div className="flex">
+                  <span className="text-white text-[28px]">500</span>
+                  <Plus className="text-sm text-secondary text-[28px]" />
+                </div>
+                {/* bottom */}
+                <span className="text-center text-white">پروژه های موفق</span>
+              </div>{" "}
+              {/* card 3 */}
+              <div className="flex flex-col items-center gap-2 w-[22%]">
+                {/* top */}
+                <div className="flex">
+                  <span className="text-white text-[28px]">500</span>
+                  <Plus className="text-sm text-secondary text-[28px]" />
+                </div>
+                {/* bottom */}
+                <span className="text-center text-white">پروژه های موفق</span>
+              </div>
+            </section>
           </div>
           {/* image */}
-          <div className="relative bg-primary p-5 lg:w-[48%] h-[400px] overflow-visible">
+          <div className="relative bg-primary p-5 lg:w-[48%] h-[305px] md:h-[400px] overflow-visible mt-20 lg:mt-0">
             {/* decorative shapes */}
             <div className="absolute inset-0 overflow-hidden">
               <div className="overflow-hidden before:content-[] before:w-10 before:h-10 md:before:w-20 md:before:h-20 md:before:-top-10 md:before:-left-10 before:bg-[#080F2F] before:absolute before:-left-5 before:-top-5 before:rotate-45 duration-500 cursor-pointer flex flex-col gap-y-5 md:w-[30%] after:content-[] after:w-10 after:h-10 md:after:w-20 md:after:h-20 md:after:-bottom-10 md:after:-right-10 after:bg-[#080F2F] after:absolute after:-right-5 after:-bottom-5 after:rotate-45"></div>
             </div>
 
             {/* image */}
-            <div className="absolute inset-0">
+            <div className="absolute inset-0  scale-x-[-1]">
               <Image
                 src="/images/HeaderExcavator.png"
                 alt="Excavator"
                 fill
-                className="object-fill scale-x-[-1] scale-115"
+                className="object-contain scale-115 sm:scale-125"
               />
             </div>
           </div>
         </section>
       </section>
+
+      {/* under svg  */}
+      <div className="relative z-20 mt-10">
+        <svg
+          className="w-full h-[100px]"
+          viewBox="0 0 1000 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="#ffffff"
+            d="M761.9,40.6L643.1,24L333.9,93.8L0.1,1H0v99h1000V1"
+          />
+        </svg>
+      </div>
     </div>
   );
 };
