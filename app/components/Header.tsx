@@ -63,7 +63,7 @@ const Header = () => {
         </button>
       </div>
       {/* ------------------------- image and text --------------------------- */}
-      <section className="relative z-10 mt-25 flex flex-col gap-y-10 px-6">
+      <section className="relative z-10 mt-25 flex flex-col gap-y-10 px-6 2xl:container 2xl:mx-auto">
         {/* text header and card */}
         <section className="flex flex-col gap-y-5 md:flex-row md:justify-between md:items-center ">
           {/* text */}
