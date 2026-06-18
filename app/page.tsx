@@ -1,8 +1,9 @@
 import AboutUs from "./components/AboutUs";
-import ContactUs from "./components/OurService";
+import OurService from "./components/OurService";
 import Header from "./components/Header";
 import OurProducts from "./components/OurProducts";
 import WhyChooseUs from "./components/WhyChooseUs";
+import AccordionAndImg from "./components/AccordionAndImg";
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
       <WhyChooseUs />
       <OurProducts />
       <AboutUs />
-      <ContactUs />
+      <OurService />
+      <AccordionAndImg />
     </div>
   );
 }
