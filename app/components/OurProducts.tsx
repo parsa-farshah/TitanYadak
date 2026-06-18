@@ -59,7 +59,7 @@ function OurProducts() {
           </div>
           {/* button */}
           <div className="mt-6 w-full">
-            <button className="px-9 w-full py-4 relative bg-primary overflow-hidden before:content-[] before:w-10 before:h-10 before:bg-[#ebebeb] before:absolute before:-left-5 before:-bottom-5 before:rotate-45 group hover:bg-secondary duration-500 cursor-pointer flex">
+            <button className="px-9 w-full py-4 relative bg-primary overflow-hidden before:content-[] before:w-10 before:h-10 before:bg-[#ebebeb] before:absolute before:-left-5 before:-bottom-5 before:rotate-45 group hover:bg-secondary duration-500 cursor-pointer flex justify-center">
               <section className="flex items-center gap-2">
                 <span className="text-[#252525] text-sm md:text-lg font-bold group-hover:text-white duration-500">
                   بیشتر بدانیم
@@ -112,7 +112,7 @@ function OurProducts() {
           </div>
           {/* button */}
           <div className="mt-6 w-full">
-            <button className="px-9 w-full py-4 relative bg-primary overflow-hidden before:content-[] before:w-10 before:h-10 before:bg-[#ebebeb] before:absolute before:-left-5 before:-bottom-5 before:rotate-45 group hover:bg-secondary duration-500 cursor-pointer flex">
+            <button className="px-9 w-full py-4 relative bg-primary overflow-hidden before:content-[] before:w-10 before:h-10 before:bg-[#ebebeb] before:absolute before:-left-5 before:-bottom-5 before:rotate-45 group hover:bg-secondary duration-500 cursor-pointer flex justify-center">
               <section className="flex items-center gap-2">
                 <span className="text-[#252525] text-sm md:text-lg font-bold group-hover:text-white duration-500">
                   بیشتر بدانیم
@@ -165,7 +165,7 @@ function OurProducts() {
           </div>
           {/* button */}
           <div className="mt-6 w-full">
-            <button className="px-9 w-full py-4 relative bg-primary overflow-hidden before:content-[] before:w-10 before:h-10 before:bg-[#ebebeb] before:absolute before:-left-5 before:-bottom-5 before:rotate-45 group hover:bg-secondary duration-500 cursor-pointer flex">
+            <button className="px-9 w-full py-4 relative bg-primary overflow-hidden before:content-[] before:w-10 before:h-10 before:bg-[#ebebeb] before:absolute before:-left-5 before:-bottom-5 before:rotate-45 group hover:bg-secondary duration-500 cursor-pointer flex justify-center">
               <section className="flex items-center gap-2">
                 <span className="text-[#252525] text-sm md:text-lg font-bold group-hover:text-white duration-500">
                   بیشتر بدانیم
@@ -218,7 +218,7 @@ function OurProducts() {
           </div>
           {/* button */}
           <div className="mt-6 w-full">
-            <button className="px-9 w-full py-4 relative bg-primary overflow-hidden before:content-[] before:w-10 before:h-10 before:bg-[#ebebeb] before:absolute before:-left-5 before:-bottom-5 before:rotate-45 group hover:bg-secondary duration-500 cursor-pointer flex">
+            <button className="px-9 w-full py-4 relative bg-primary overflow-hidden before:content-[] before:w-10 before:h-10 before:bg-[#ebebeb] before:absolute before:-left-5 before:-bottom-5 before:rotate-45 group hover:bg-secondary duration-500 cursor-pointer flex justify-center">
               <section className="flex items-center gap-2">
                 <span className="text-[#252525] text-sm md:text-lg font-bold group-hover:text-white duration-500">
                   بیشتر بدانیم
