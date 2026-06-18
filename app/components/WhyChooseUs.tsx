@@ -3,9 +3,8 @@ import {
   CheckCircle,
   CheckCircle2Icon,
 } from "lucide-react";
-import React from "react";
-import { AvatarComponent } from "./AvatarComponent";
 import Image from "next/image";
+import { BrandCarousel } from "./BrandsCarousel";
 
 const WhyChooseUs = () => {
   return (
@@ -98,6 +97,21 @@ const WhyChooseUs = () => {
               objectFit="contain"
             />
           </figure>
+        </div>
+      </div>
+      {/* brands */}
+      <div
+        className="relative w-full h-fit bg-primary overflow-hidden before:content-[] before:w-10 before:h-10 md:before:w-20 md:before:h-20 md:before:-bottom-10 md:before:-left-10 before:bg-[#ffffff] before:absolute before:-left-5 before:-bottom-5 before:-rotate-45 duration-500 flex flex-col gap-y-5 p-8 lg:flex-row before:z-10 lg:items-center bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: "url('/images/bgMain.jpg')" }}
+      >
+        {/* text */}
+        <h2 className="text-[#ffffff] text-[28px] font-black md:text-4xl relative z-10 md:leading-14">
+          لورم <span className="text-primary">ایپسوم</span> متن ساختگی با{" "}
+          <span className="text-primary">تولید</span> سادگی
+        </h2>
+        {/* logos Carousel */}
+        <div className="w-full border-r-4 border-r-secondary relative z-10 h-fit">
+          <BrandCarousel />
         </div>
       </div>
     </div>

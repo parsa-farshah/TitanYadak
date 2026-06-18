@@ -6,8 +6,10 @@ import { Plus, PlusCircle } from "lucide-react";
 
 const Header = () => {
   return (
-    <div className=" relative overflow-hidden">
-      <Image src="/images/bgMain.jpg" alt="background" fill />
+    <div
+      className="relative overflow-hidden bg-cover bg-center bg-fixed"
+      style={{ backgroundImage: "url('/images/bgMain.jpg')" }}
+    >
       {/* navigation and logo and button */}
       <div className="py-5 flex justify-between items-center relative z-10 2xl:container 2xl:mx-auto border-b-2 border-b-[#121741] px-6">
         {/* logo */}
