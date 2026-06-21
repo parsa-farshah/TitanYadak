@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { AvatarComponent } from "./AvatarComponent";
 import { Plus, PlusCircle } from "lucide-react";
+import { MobileMenu } from "./MobileMenu";
 
 const Header = () => {
   return (
@@ -23,12 +24,8 @@ const Header = () => {
           />
         </figure>
         {/* menu mobile */}
-        <div className="p-3 bg-secondary lg:hidden group hover:bg-primary duration-500 cursor-pointer">
-          <Bars3Icon
-            width={25}
-            height={25}
-            className="text-white group-hover:text-black duration-500"
-          />
+        <div className="lg:hidden">
+          <MobileMenu currentPage="/" />
         </div>
         {/* Navigation in desktop */}
         <section className="hidden lg:flex">
