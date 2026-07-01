@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function PartsCTA() {
   return (
-    <section className="relative min-h-[400px] overflow-hidden">
+    <section className="relative min-h-[400px] overflow-hidden mb-5">
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -78,17 +78,16 @@ export default function PartsCTA() {
       </div>
 
       {/* Separator SVG */}
-      <div className="absolute bottom-0 left-0 right-0 z-20">
+      <div className="relative z-20 mt-10">
         <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 100"
-          className="w-full h-auto"
+          className="w-full h-[100px]"
+          viewBox="0 0 1000 100"
+          preserveAspectRatio="none"
         >
           <path
-            fill="#F5F5F5"
-            fillOpacity="1"
-            d="M0,32L48,37.3C96,43,192,53,288,58.7C384,64,480,64,576,58.7C672,53,768,43,864,42.7C960,43,1056,53,1152,53.3C1248,53,1344,43,1392,37.3L1440,32L1440,100L1392,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z"
-          ></path>
+            fill="#ffffff"
+            d="M761.9,40.6L643.1,24L333.9,93.8L0.1,1H0v99h1000V1"
+          />
         </svg>
       </div>
     </section>

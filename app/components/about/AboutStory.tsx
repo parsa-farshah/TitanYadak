@@ -7,7 +7,7 @@ export default function AboutStory() {
       <div className="2xl:container 2xl:mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* تصویر */}
-          <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden shadow-2xl">
+          <div className="relative h-[400px] md:h-[500px] overflow-hidden shadow-2xl">
             <Image
               src="/images/bgMain.jpg"
               alt="داستان ما"

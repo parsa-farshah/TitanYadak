@@ -50,30 +50,6 @@ function NavigationAndLogo({ currentPage }: NavigationAndLogoProps) {
             </li>
             <li>
               <a
-                href="/aboutUs"
-                className={
-                  currentPage === "/aboutUs"
-                    ? "text-primary"
-                    : "text-white hover:text-primary"
-                }
-              >
-                درباره ما
-              </a>
-            </li>
-            <li>
-              <a
-                href="/services"
-                className={
-                  currentPage === "/services"
-                    ? "text-primary"
-                    : "text-white hover:text-primary"
-                }
-              >
-                سرویس های ما
-              </a>
-            </li>
-            <li>
-              <a
                 href="/products"
                 className={
                   currentPage === "/products"
@@ -86,14 +62,26 @@ function NavigationAndLogo({ currentPage }: NavigationAndLogoProps) {
             </li>
             <li>
               <a
-                href="/pages"
+                href="/aboutUs"
                 className={
-                  currentPage === "/pages"
+                  currentPage === "/aboutUs"
                     ? "text-primary"
                     : "text-white hover:text-primary"
                 }
               >
-                صفحات ما
+                درباره ما
+              </a>
+            </li>
+            <li>
+              <a
+                href="/aboutUs"
+                className={
+                  currentPage === "/aboutUs"
+                    ? "text-primary"
+                    : "text-white hover:text-primary"
+                }
+              >
+                تماس
               </a>
             </li>
           </ul>
