@@ -27,7 +27,9 @@ export default function BulldozerPartsPage() {
         brandFilter={brandFilter}
         categoryFilter={categoryFilter}
       />
-      <PartsCTA />
+      <div className="mb-20">
+        <PartsCTA />
+      </div>
       <Footer />
     </main>
   );

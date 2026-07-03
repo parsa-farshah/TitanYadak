@@ -80,7 +80,7 @@ export default function PartsCTA() {
       {/* Separator SVG */}
       <div className="relative z-20 mt-10">
         <svg
-          className="w-full h-[100px]"
+          className="w-full h-[50px]"
           viewBox="0 0 1000 100"
           preserveAspectRatio="none"
         >

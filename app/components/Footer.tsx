@@ -12,27 +12,26 @@ import {
 function Footer() {
   return (
     <div
-      className="relative overflow-hidden bg-cover bg-center bg-fixed mt-20"
+      className="relative overflow-hidden bg-cover bg-center bg-fixed"
       style={{ backgroundImage: "url('/images/bgMain.jpg')" }}
     >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-[#03071E]/90 z-0" />
-
       {/* Content */}
       <div className="relative z-10 px-6 md:px-12 py-16 md:py-20">
         <section className="w-full flex flex-col gap-y-10 md:flex-row md:gap-8 2xl:container 2xl:mx-auto">
           {/* Logo and About */}
           <div className="flex flex-col gap-y-5 md:w-[35%]">
-            <figure>
+            <figure className="bg-white p-1 w-fit rounded-xl">
               <Image
-                src="/images/logo.png"
+                src="/images/logoMain.png"
                 alt="کاربن - قطعات بلدوزر"
                 width={80}
                 height={80}
                 loading="lazy"
               />
             </figure>
-            <h3 className="text-white text-xl md:text-2xl font-black">کاربن</h3>
+            <h3 className="text-white text-xl md:text-2xl font-black">
+              تیتان یدک
+            </h3>
             <p className="text-[#d3d3d3] text-sm md:text-base leading-7">
               تأمین‌کننده معتبر قطعات یدکی ماشین‌آلات سنگین با بیش از ۲۰ سال
               تجربه. ما با ارائه محصولات اصل و باکیفیت، شریک قابل اعتماد

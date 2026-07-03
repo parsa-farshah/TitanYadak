@@ -3,6 +3,7 @@ import { ArrowLeftCircleIcon } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import { MobileMenu } from "./MobileMenu";
+import Link from "next/link";
 
 interface NavigationAndLogoProps {
   currentPage: string;
@@ -10,25 +11,22 @@ interface NavigationAndLogoProps {
 
 function NavigationAndLogo({ currentPage }: NavigationAndLogoProps) {
   return (
-    <div
-      className="relative overflow-hidden bg-cover bg-center bg-fixed"
-      style={{ backgroundImage: "url('/images/bgMain.jpg')" }}
-    >
-      {/* لایه تیره روی بک گراند */}
-      <div className="absolute inset-0 bg-[#03071E]/80 z-0"></div>
-
+    <div className="relative overflow-hidden bg-cover bg-center bg-fixed bg-white">
       {/* navigation and logo and button */}
       <div className="py-5 flex justify-between items-center relative z-10 2xl:container 2xl:mx-auto border-b-2 border-b-[#121741] px-6">
         {/* logo */}
-        <figure>
-          <Image
-            src="/images/logo.png"
-            alt="logo"
-            width={64}
-            height={64}
-            loading="lazy"
-          />
-        </figure>
+        <Link href="./">
+          <figure className="">
+            <Image
+              src="/images/logoMain.png"
+              alt="logo"
+              width={64}
+              height={64}
+              loading="lazy"
+            />
+          </figure>
+        </Link>
+
         {/* menu mobile */}
         <div className="lg:hidden">
           <MobileMenu currentPage={currentPage} />
@@ -42,7 +40,7 @@ function NavigationAndLogo({ currentPage }: NavigationAndLogoProps) {
                 className={
                   currentPage === "/"
                     ? "text-primary"
-                    : "text-white hover:text-primary"
+                    : "text-black hover:text-primary"
                 }
               >
                 خانه
@@ -54,7 +52,7 @@ function NavigationAndLogo({ currentPage }: NavigationAndLogoProps) {
                 className={
                   currentPage === "/products"
                     ? "text-primary"
-                    : "text-white hover:text-primary"
+                    : "text-black hover:text-primary"
                 }
               >
                 محصولات ما
@@ -66,7 +64,7 @@ function NavigationAndLogo({ currentPage }: NavigationAndLogoProps) {
                 className={
                   currentPage === "/aboutUs"
                     ? "text-primary"
-                    : "text-white hover:text-primary"
+                    : "text-black hover:text-primary"
                 }
               >
                 درباره ما
@@ -78,7 +76,7 @@ function NavigationAndLogo({ currentPage }: NavigationAndLogoProps) {
                 className={
                   currentPage === "/aboutUs"
                     ? "text-primary"
-                    : "text-white hover:text-primary"
+                    : "text-black hover:text-primary"
                 }
               >
                 تماس
@@ -87,7 +85,7 @@ function NavigationAndLogo({ currentPage }: NavigationAndLogoProps) {
           </ul>
         </section>
         {/* left button */}
-        <button className="px-9 py-4 relative bg-secondary overflow-hidden before:content-[] before:w-10 before:h-10 before:bg-[#03071E] before:absolute before:-left-5 before:-bottom-5 before:rotate-45 group hover:bg-primary duration-500 cursor-pointer hidden lg:flex">
+        <button className="px-9 py-4 relative bg-secondary overflow-hidden before:content-[] before:w-10 before:h-10 before:bg-white before:absolute before:-left-5 before:-bottom-5 before:rotate-45 group hover:bg-primary duration-500 cursor-pointer hidden lg:flex">
           <section className="flex items-center gap-2">
             <span className="text-white text-lg font-bold group-hover:text-black duration-500">
               درباره ما

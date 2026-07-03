@@ -35,19 +35,6 @@ export default function AboutCTA() {
           </button>
         </div>
       </div>
-      {/* SVG Divider */}
-      <div className="absolute bottom-0 left-0 right-0 z-20">
-        <svg
-          className="w-full h-[60px] md:h-[100px]"
-          viewBox="0 0 1000 100"
-          preserveAspectRatio="none"
-        >
-          <path
-            fill="#F5F5F5"
-            d="M761.9,40.6L643.1,24L333.9,93.8L0.1,1H0v99h1000V1"
-          />
-        </svg>
-      </div>
     </section>
   );
 }

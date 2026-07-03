@@ -11,13 +11,13 @@ import NavigationAndLogo from "../components/NavigationAndLogo";
 
 export default function AboutPage() {
   return (
-    <main className="bg-[#F5F5F5]">
+    <main className="bg-white">
       <NavigationAndLogo currentPage="/about" />
       <AboutHero />
       <AboutStats />
       <AboutStory />
       <AboutValues />
-      <div className="mb-14">
+      <div className="mb-20">
         <AboutCTA />
       </div>
       <Footer />
