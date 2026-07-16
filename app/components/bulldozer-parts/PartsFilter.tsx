@@ -1,15 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import * as React from "react";
 import { Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import {
   Select,
   SelectContent,
+  SelectGroup,
   SelectItem,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { CATEGORIES } from "../products/data/categories";
 
 interface PartsFilterProps {
   onSearch: (query: string) => void;
@@ -22,7 +24,16 @@ export default function PartsFilter({
   onBrandChange,
   onCategoryChange,
 }: PartsFilterProps) {
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = React.useState("");
+  const [category, setCategory] = React.useState<string | null>("all");
+
+  const categoryItems = [
+    { label: "همه دسته‌ها", value: "all" },
+    ...CATEGORIES.map((item) => ({
+      label: item.label,
+      value: item.slug,
+    })),
+  ];
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
@@ -30,76 +41,55 @@ export default function PartsFilter({
     onSearch(value);
   };
 
+  const handleCategoryChange = (value: string | null) => {
+    const nextValue = value ?? "all";
+    setCategory(nextValue);
+    onCategoryChange(nextValue);
+  };
+
   return (
-    <section className="bg-[#F5F5F5] py-10 md:py-16">
+    <section className="bg-[#F5F5F5] py-10 md:py-16" dir="rtl">
       <div className="2xl:container 2xl:mx-auto px-5 md:px-10">
-        <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
-          {/* Search Bar */}
+        <div className="rounded-2xl bg-white p-6 shadow-lg md:p-8">
           <div className="mb-6">
             <div className="relative">
-              <Search className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+              <Search className="absolute right-4 top-1/2 z-10 h-5 w-5 -translate-y-1/2 text-gray-400" />
               <Input
                 type="text"
                 placeholder="جستجوی قطعات..."
                 value={searchQuery}
                 onChange={handleSearchChange}
-                className="pr-12 pl-4 py-6 text-lg border-2 border-gray-200 focus:border-primary rounded-xl"
+                className="h-14 rounded-xl border-2 border-gray-200 pl-4 pr-12 text-base focus-visible:ring-0"
               />
             </div>
           </div>
 
-          {/* Filters */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="w-40">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                برند بلدوزر
-              </label>
-              <Select onValueChange={onBrandChange}>
-                <SelectTrigger className="w-full py-6 text-base border-2 border-gray-200 rounded-xl">
-                  <SelectValue placeholder="همه برندها" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">همه برندها</SelectItem>
-                  <SelectItem value="caterpillar">کاترپیلار</SelectItem>
-                  <SelectItem value="komatsu">کوماتسو</SelectItem>
-                  <SelectItem value="liebherr">لیبهر</SelectItem>
-                  <SelectItem value="volvo">ولوو</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="mb-2 block text-sm font-medium text-gray-700">
                 دسته‌بندی قطعه
               </label>
-              <Select onValueChange={onCategoryChange}>
-                <SelectTrigger className="w-full py-6 text-base border-2 border-gray-200 rounded-xl">
+
+              <Select
+                items={categoryItems}
+                value={category}
+                onValueChange={handleCategoryChange}
+              >
+                <SelectTrigger
+                  dir="rtl"
+                  className="h-12 w-full rounded-xl border-2 border-gray-200 text-base"
+                >
                   <SelectValue placeholder="همه دسته‌ها" />
                 </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">همه دسته‌ها</SelectItem>
-                  <SelectItem value="engine">موتور</SelectItem>
-                  <SelectItem value="hydraulic">هیدرولیک</SelectItem>
-                  <SelectItem value="transmission">گیربکس</SelectItem>
-                  <SelectItem value="undercarriage">زیربند</SelectItem>
-                  <SelectItem value="electrical">برقی</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
 
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                مرتب‌سازی
-              </label>
-              <Select defaultValue="newest">
-                <SelectTrigger className="w-full py-6 text-base border-2 border-gray-200 rounded-xl">
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="newest">جدیدترین</SelectItem>
-                  <SelectItem value="price-low">قیمت: کم به زیاد</SelectItem>
-                  <SelectItem value="price-high">قیمت: زیاد به کم</SelectItem>
-                  <SelectItem value="popular">محبوب‌ترین</SelectItem>
+                <SelectContent dir="rtl" className="bg-white w-full max-h-20">
+                  <SelectGroup>
+                    {categoryItems.map((item) => (
+                      <SelectItem key={item.value} value={item.value}>
+                        {item.label}
+                      </SelectItem>
+                    ))}
+                  </SelectGroup>
                 </SelectContent>
               </Select>
             </div>

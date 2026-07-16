@@ -2,219 +2,118 @@
 
 import { useMemo } from "react";
 import PartCard from "./PartCard";
-
-// Mock Data - 15 محصول
-const PARTS_DATA = [
-  {
-    id: 1,
-    name: "فیلتر روغن موتور دیزل",
-    code: "CAT-1R-0750",
-    price: "2,500,000 تومان",
-    image: "/images/HeaderExcavator.png",
-    category: "موتور",
-    brand: "کاترپیلار",
-  },
-  {
-    id: 2,
-    name: "پمپ هیدرولیک فشار قوی",
-    code: "KOM-708-2L-06170",
-    price: "45,000,000 تومان",
-    image: "/images/HeaderExcavator.png",
-    category: "هیدرولیک",
-    brand: "کوماتسو",
-  },
-  {
-    id: 3,
-    name: "زنجیر کامل زیربند",
-    code: "LIE-9274260",
-    price: "120,000,000 تومان",
-    image: "/images/HeaderExcavator.png",
-    category: "زیربند",
-    brand: "لیبهر",
-  },
-  {
-    id: 4,
-    name: "سیستم خنک‌کننده موتور",
-    code: "VOL-21404502",
-    price: "18,500,000 تومان",
-    image: "/images/HeaderExcavator.png",
-    category: "موتور",
-    brand: "ولوو",
-  },
-  {
-    id: 5,
-    name: "گیربکس اتوماتیک",
-    code: "CAT-2384433",
-    price: "95,000,000 تومان",
-    image: "/images/HeaderExcavator.png",
-    category: "گیربکس",
-    brand: "کاترپیلار",
-  },
-  {
-    id: 6,
-    name: "سیستم روشنایی LED",
-    code: "KOM-421-06-31230",
-    price: "8,200,000 تومان",
-    image: "/images/HeaderExcavator.png",
-    category: "برقی",
-    brand: "کوماتسو",
-  },
-  {
-    id: 7,
-    name: "شیر کنترل هیدرولیک",
-    code: "LIE-5802370",
-    price: "32,000,000 تومان",
-    image: "/images/HeaderExcavator.png",
-    category: "هیدرولیک",
-    brand: "لیبهر",
-  },
-  {
-    id: 8,
-    name: "فیلتر هوای کابین",
-    code: "VOL-14556011",
-    price: "1,800,000 تومان",
-    image: "/images/HeaderExcavator.png",
-    category: "موتور",
-    brand: "ولوو",
-  },
-  {
-    id: 9,
-    name: "رولیک زیربند تقویتی",
-    code: "CAT-9W-2382",
-    price: "28,000,000 تومان",
-    image: "/images/HeaderExcavator.png",
-    category: "زیربند",
-    brand: "کاترپیلار",
-  },
-  {
-    id: 10,
-    name: "سیستم کنترل الکترونیکی",
-    code: "KOM-7835-26-1003",
-    price: "62,000,000 تومان",
-    image: "/images/HeaderExcavator.png",
-    category: "برقی",
-    brand: "کوماتسو",
-  },
-  {
-    id: 11,
-    name: "پمپ سوخت تزریق مستقیم",
-    code: "LIE-10291673",
-    price: "38,500,000 تومان",
-    image: "/images/HeaderExcavator.png",
-    category: "موتور",
-    brand: "لیبهر",
-  },
-  {
-    id: 12,
-    name: "سیلندر هیدرولیک دوبل",
-    code: "VOL-14589132",
-    price: "52,000,000 تومان",
-    image: "/images/HeaderExcavator.png",
-    category: "هیدرولیک",
-    brand: "ولوو",
-  },
-  {
-    id: 13,
-    name: "دیسک کلاچ سنگین",
-    code: "CAT-3T-3824",
-    price: "24,500,000 تومان",
-    image: "/images/HeaderExcavator.png",
-    category: "گیربکس",
-    brand: "کاترپیلار",
-  },
-  {
-    id: 14,
-    name: "تیغه بلدوزر فولادی",
-    code: "KOM-195-71-21340",
-    price: "85,000,000 تومان",
-    image: "/images/HeaderExcavator.png",
-    category: "زیربند",
-    brand: "کوماتسو",
-  },
-  {
-    id: 15,
-    name: "باتری صنعتی 24 ولت",
-    code: "VOL-3981134",
-    price: "6,800,000 تومان",
-    image: "/images/HeaderExcavator.png",
-    category: "برقی",
-    brand: "ولوو",
-  },
-];
+import { products } from "../products/data/products";
+import { CATEGORIES } from "../products/data/categories";
+import Image from "next/image";
 
 interface PartsGridProps {
   searchQuery: string;
-  brandFilter: string;
   categoryFilter: string;
 }
 
 export default function PartsGrid({
   searchQuery,
-  brandFilter,
   categoryFilter,
 }: PartsGridProps) {
   const filteredParts = useMemo(() => {
-    return PARTS_DATA.filter((part) => {
-      // Search filter
+    return products.filter((part) => {
+      const categoryLabel =
+        CATEGORIES.find((category) => category.slug === part.category)?.label ??
+        "";
+
       const matchesSearch =
-        searchQuery === "" ||
-        part.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        part.code.toLowerCase().includes(searchQuery.toLowerCase());
+        searchQuery.trim() === "" ||
+        part.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        part.slug.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        categoryLabel.toLowerCase().includes(searchQuery.toLowerCase());
 
-      // Brand filter
-      const matchesBrand =
-        !brandFilter ||
-        brandFilter === "all" ||
-        part.brand === brandFilter ||
-        (brandFilter === "caterpillar" && part.brand === "کاترپیلار") ||
-        (brandFilter === "komatsu" && part.brand === "کوماتسو") ||
-        (brandFilter === "liebherr" && part.brand === "لیبهر") ||
-        (brandFilter === "volvo" && part.brand === "ولوو");
-
-      // Category filter
       const matchesCategory =
         !categoryFilter ||
         categoryFilter === "all" ||
-        part.category === categoryFilter ||
-        (categoryFilter === "engine" && part.category === "موتور") ||
-        (categoryFilter === "hydraulic" && part.category === "هیدرولیک") ||
-        (categoryFilter === "transmission" && part.category === "گیربکس") ||
-        (categoryFilter === "undercarriage" && part.category === "زیربند") ||
-        (categoryFilter === "electrical" && part.category === "برقی");
+        part.category === categoryFilter;
 
-      return matchesSearch && matchesBrand && matchesCategory;
+      return matchesSearch && matchesCategory;
     });
-  }, [searchQuery, brandFilter, categoryFilter]);
+  }, [searchQuery, categoryFilter]);
 
   return (
-    <section className="bg-[#F5F5F5] py-16 md:py-24">
-      <div className="2xl:container 2xl:mx-auto px-5 md:px-10">
-        {/* Results Count */}
-        <div className="mb-8">
-          <p className="text-lg text-gray-700">
-            <span className="font-bold text-primary">
-              {filteredParts.length}
-            </span>{" "}
-            قطعه یافت شد
-          </p>
-        </div>
+    <>
+      <section className="bg-white py-10">
+        <div className="2xl:container 2xl:mx-auto px-5 md:px-10">
+          <h2 className="mb-6 text-2xl font-bold text-gray-800">
+            دسته‌بندی قطعات
+          </h2>
 
-        {/* Grid */}
-        {filteredParts.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {filteredParts.map((part) => (
-              <PartCard key={part.id} {...part} />
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
+            {CATEGORIES.map((category) => (
+              <div
+                key={category.slug}
+                className={`overflow-hidden rounded-2xl border bg-white shadow-sm transition hover:shadow-md ${
+                  categoryFilter === category.slug
+                    ? "border-primary ring-2 ring-primary/20"
+                    : "border-gray-200"
+                }`}
+              >
+                <div className="relative h-40 w-full ">
+                  <Image
+                    src={category.image}
+                    alt={category.label}
+                    fill
+                    className="object-contain  p-4"
+                  />
+                </div>
+
+                <div className="p-4 text-center">
+                  <p className="text-sm font-bold text-gray-800 md:text-base">
+                    {category.label}
+                  </p>
+                </div>
+              </div>
             ))}
           </div>
-        ) : (
-          <div className="text-center py-20">
-            <p className="text-2xl text-gray-500 font-medium">
-              قطعه‌ای با این مشخصات یافت نشد
+        </div>
+      </section>
+
+      <section className="bg-[#F5F5F5] py-16 md:py-24">
+        <div className="2xl:container 2xl:mx-auto px-5 md:px-10">
+          <div className="mb-8">
+            <p className="text-lg text-gray-700">
+              <span className="font-bold text-primary">
+                {filteredParts.length}
+              </span>{" "}
+              قطعه یافت شد
             </p>
-            <p className="text-gray-400 mt-4">لطفاً فیلترها را تغییر دهید</p>
           </div>
-        )}
-      </div>
-    </section>
+
+          {filteredParts.length > 0 ? (
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 md:gap-8">
+              {filteredParts.map((part) => (
+                <PartCard
+                  key={part.id}
+                  id={part.id}
+                  name={part.title}
+                  image={part.image}
+                  price={`${part.price.toLocaleString("fa-IR")} تومان`}
+                  category={
+                    CATEGORIES.find(
+                      (category) => category.slug === part.category,
+                    )?.label ?? part.category
+                  }
+                  slug={part.slug}
+                  stock={part.stock}
+                />
+              ))}
+            </div>
+          ) : (
+            <div className="py-20 text-center">
+              <p className="text-2xl font-medium text-gray-500">
+                قطعه‌ای با این مشخصات یافت نشد
+              </p>
+              <p className="mt-4 text-gray-400">لطفا فیلترها را تغییر دهید</p>
+            </div>
+          )}
+        </div>
+      </section>
+    </>
   );
 }

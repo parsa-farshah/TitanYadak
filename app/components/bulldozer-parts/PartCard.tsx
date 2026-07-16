@@ -28,8 +28,7 @@ export default function PartCard({
       <div className="absolute bottom-0 left-0 w-16 h-16 bg-gradient-to-tr from-secondary/20 to-transparent rounded-tr-[100px] -z-0"></div>
 
       {/* Image Container */}
-      <div className="relative h-56 bg-gray-50 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      <div className="relative h-56 overflow-hidden">
         <Image
           src={image}
           alt={name}
