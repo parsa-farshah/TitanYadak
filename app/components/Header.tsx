@@ -19,19 +19,19 @@ const Header = () => {
         {/* text header and card */}
         <section className="flex flex-col gap-y-5 md:flex-row md:justify-between md:items-center ">
           {/* text */}
-          <p className="text-white text-4xl border-r-4 border-r-secondary pr-5 font-black leading-14 md:text-5xl md:leading-20 lg:text-8xl lg:leading-32 md:w-[65%]">
-            لورم <span className="text-primary">ایپسوم</span> متن ساختگی با{" "}
-            <span className="text-primary">تولید</span> سادگی
+          <p className="text-white text-4xl border-r-4 border-r-secondary pr-5 font-black leading-14 md:text-5xl md:leading-20 lg:text-7xl lg:leading-32 md:w-[65%]">
+            تجربه، <span className="text-primary">اصالت</span> و{" "}
+            <span className="text-primary">تأمین سریع</span> قطعات برقی
+            ماشین‌آلات راهسازی
           </p>
           {/* card */}
           <div className="p-5 relative bg-primary overflow-hidden before:content-[] before:w-10 before:h-10 md:before:w-20 md:before:h-20 md:before:-top-10 md:before:-left-10 before:bg-[#080F2F] before:absolute before:-left-5 before:-top-5 before:rotate-45 duration-500 flex flex-col gap-y-5 md:w-[30%]">
-            <AvatarComponent />
-            <span className="text-lg font-bold">لورم ایپسوم متن</span>
+            <span className="text-lg font-bold">درباره تیتان یدک</span>
             <p className="text-[#252525] text-sm ">
-              لورم ایپسوم متن ساختگی با تولید سادگی لورم ایپسوم متن ساختگی با
-              تولید سادگی لورم ایپسوم متن ساختگی با تولید سادگی لورم ایپسوم متن
-              ساختگی با تولید سادگی لورم ایپسوم متن ساختگی با تولید سادگی لورم
-              ایپسوم متن ساختگی با تولید سادگی
+              تیتان یدک با نزدیک به پنج دهه تجربه، به‌صورت تخصصی در زمینه
+              واردات، تأمین و فروش قطعات برقی ماشین‌آلات راهسازی فعالیت می‌کند و
+              امروز به عنوان همراهی مطمئن در کنار شرکت‌ها و پیمانکاران این صنعت
+              قرار دارد.
             </p>
             <section className="flex items-center gap-2 group">
               <span className="text-black text-sm font-bold group-hover:text-secondary duration-500">
@@ -50,9 +50,9 @@ const Header = () => {
           {/* text */}
           <div className="flex flex-col">
             <p className="text-[#d3d3d3] pb-3.5 ">
-              لورم ایپسوم متن ساختگی با تولید سادگی لورم ایپسوم متن ساختگی با
-              تولید سادگی لورم ایپسوم متن ساختگی با تولید سادگی لورم ایپسوم متن
-              ساختگی با تولید سادگی
+              تأمین قطعات برقی برندهای مطرحی مانند Komatsu، Caterpillar،
+              Hitachi، Volvo، Hyundai، Doosan، Kobelco، Liebherr و Zoomlion با
+              تکیه بر واردات مستقیم، اصالت کالا و پشتیبانی تخصصی.
             </p>
 
             {/* button */}
@@ -60,7 +60,7 @@ const Header = () => {
               <button className="px-9 py-4 relative bg-secondary overflow-hidden before:content-[] before:w-10 before:h-10 before:bg-[#03071E] before:absolute before:-left-5 before:-bottom-5 before:rotate-45 group hover:bg-primary duration-500 cursor-pointer flex">
                 <section className="flex items-center gap-2">
                   <span className="text-white text-sm md:text-lg font-bold group-hover:text-black duration-500">
-                    بیشتر بدانیم
+                    مشاهده محصولات
                   </span>
                   <ArrowLeftCircleIcon
                     className="text-white"
@@ -77,31 +77,31 @@ const Header = () => {
               <div className="border-l border-l-secondary flex flex-col items-center gap-2 w-[22%]">
                 {/* top */}
                 <div className="flex">
-                  <span className="text-white text-[28px]">500</span>
+                  <span className="text-white text-[28px]">50</span>
                   <Plus className="text-sm text-secondary text-[28px]" />
                 </div>
                 {/* bottom */}
-                <span className="text-center text-white">پروژه های موفق</span>
+                <span className="text-center text-white">سال تجربه تخصصی</span>
               </div>
               {/* card 2 */}
               <div className="border-l border-l-secondary flex flex-col items-center gap-2 w-[22%]">
                 {/* top */}
                 <div className="flex">
-                  <span className="text-white text-[28px]">500</span>
+                  <span className="text-white text-[28px]">10</span>
                   <Plus className="text-sm text-secondary text-[28px]" />
                 </div>
                 {/* bottom */}
-                <span className="text-center text-white">پروژه های موفق</span>
+                <span className="text-center text-white">برند معتبر جهانی</span>
               </div>{" "}
               {/* card 3 */}
               <div className="flex flex-col items-center gap-2 w-[22%]">
                 {/* top */}
                 <div className="flex">
-                  <span className="text-white text-[28px]">500</span>
+                  <span className="text-white text-[28px]">1000</span>
                   <Plus className="text-sm text-secondary text-[28px]" />
                 </div>
                 {/* bottom */}
-                <span className="text-center text-white">پروژه های موفق</span>
+                <span className="text-center text-white">قطعه قابل تأمین</span>
               </div>
             </section>
           </div>
