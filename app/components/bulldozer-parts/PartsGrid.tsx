@@ -5,6 +5,7 @@ import PartCard from "./PartCard";
 import { products } from "../products/data/products";
 import { CATEGORIES } from "../products/data/categories";
 import Image from "next/image";
+import Link from "next/link";
 
 interface PartsGridProps {
   searchQuery: string;
@@ -38,7 +39,7 @@ export default function PartsGrid({
 
   return (
     <>
-      <section className="bg-white py-10">
+      <section className="bg-white py-10" dir="rtl">
         <div className="2xl:container 2xl:mx-auto px-5 md:px-10">
           <h2 className="mb-6 text-2xl font-bold text-gray-800">
             دسته‌بندی قطعات
@@ -46,20 +47,21 @@ export default function PartsGrid({
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
             {CATEGORIES.map((category) => (
-              <div
+              <Link
                 key={category.slug}
+                href={`/bulldozer-parts/${category.slug}`}
                 className={`overflow-hidden rounded-2xl border bg-white shadow-sm transition hover:shadow-md ${
                   categoryFilter === category.slug
                     ? "border-primary ring-2 ring-primary/20"
                     : "border-gray-200"
                 }`}
               >
-                <div className="relative h-40 w-full ">
+                <div className="relative h-40 w-full">
                   <Image
                     src={category.image}
                     alt={category.label}
                     fill
-                    className="object-contain  p-4"
+                    className="object-contain p-4"
                   />
                 </div>
 
@@ -68,13 +70,13 @@ export default function PartsGrid({
                     {category.label}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-[#F5F5F5] py-16 md:py-24">
+      <section className="bg-[#F5F5F5] py-16 md:py-24" dir="rtl">
         <div className="2xl:container 2xl:mx-auto px-5 md:px-10">
           <div className="mb-8">
             <p className="text-lg text-gray-700">
@@ -86,11 +88,11 @@ export default function PartsGrid({
           </div>
 
           {filteredParts.length > 0 ? (
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 md:gap-8">
+            <div className="grid  grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
               {filteredParts.map((part) => (
                 <PartCard
-                  key={part.id}
                   id={part.id}
+                  key={part.id}
                   name={part.title}
                   image={part.image}
                   price={`${part.price.toLocaleString("fa-IR")} تومان`}
@@ -99,8 +101,6 @@ export default function PartsGrid({
                       (category) => category.slug === part.category,
                     )?.label ?? part.category
                   }
-                  slug={part.slug}
-                  stock={part.stock}
                 />
               ))}
             </div>

@@ -25,7 +25,7 @@ export default function PartsFilter({
   onCategoryChange,
 }: PartsFilterProps) {
   const [searchQuery, setSearchQuery] = React.useState("");
-  const [category, setCategory] = React.useState<string | null>("all");
+  const [category, setCategory] = React.useState<string | undefined>("all");
 
   const categoryItems = [
     { label: "همه دسته‌ها", value: "all" },
@@ -41,7 +41,7 @@ export default function PartsFilter({
     onSearch(value);
   };
 
-  const handleCategoryChange = (value: string | null) => {
+  const handleCategoryChange = (value: string) => {
     const nextValue = value ?? "all";
     setCategory(nextValue);
     onCategoryChange(nextValue);
@@ -70,11 +70,7 @@ export default function PartsFilter({
                 دسته‌بندی قطعه
               </label>
 
-              <Select
-                items={categoryItems}
-                value={category}
-                onValueChange={handleCategoryChange}
-              >
+              <Select value={category} onValueChange={handleCategoryChange}>
                 <SelectTrigger
                   dir="rtl"
                   className="h-12 w-full rounded-xl border-2 border-gray-200 text-base"

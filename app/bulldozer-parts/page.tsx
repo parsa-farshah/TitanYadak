@@ -24,7 +24,6 @@ export default function BulldozerPartsPage() {
       />
       <PartsGrid
         searchQuery={searchQuery}
-        brandFilter={brandFilter}
         categoryFilter={categoryFilter}
       />
       <div className="mb-20">
