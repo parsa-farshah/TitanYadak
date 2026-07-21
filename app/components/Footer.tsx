@@ -5,7 +5,6 @@ import {
   FaTelegram,
   FaWhatsapp,
   FaPhone,
-  FaEnvelope,
   FaMapMarkerAlt,
 } from "react-icons/fa";
 
@@ -15,70 +14,62 @@ function Footer() {
       className="relative overflow-hidden bg-cover bg-center bg-fixed"
       style={{ backgroundImage: "url('/images/bgMain.jpg')" }}
     >
-      {/* Content */}
       <div className="relative z-10 px-6 md:px-12 py-16 md:py-20">
         <section className="w-full flex flex-col gap-y-10 md:flex-row md:gap-8 2xl:container 2xl:mx-auto">
-          {/* Logo and About */}
           <div className="flex flex-col gap-y-5 md:w-[35%]">
             <figure className="bg-white p-1 w-fit rounded-xl">
               <Image
                 src="/images/logoMain.png"
-                alt="کاربن - قطعات بلدوزر"
+                alt="تیتان یدک - قطعات برقی ماشین‌آلات راهسازی"
                 width={80}
                 height={80}
                 loading="lazy"
               />
             </figure>
+
             <h3 className="text-white text-xl md:text-2xl font-black">
               تیتان یدک
             </h3>
+
             <p className="text-[#d3d3d3] text-sm md:text-base leading-7">
-              تأمین‌کننده معتبر قطعات یدکی ماشین‌آلات سنگین با بیش از ۲۰ سال
-              تجربه. ما با ارائه محصولات اصل و باکیفیت، شریک قابل اعتماد
-              پروژه‌های شما هستیم.
+              تیتان یدک با تکیه بر سال‌ها تجربه، به‌صورت تخصصی در زمینه تأمین،
+              واردات و فروش قطعات برقی ماشین‌آلات راهسازی فعالیت می‌کند و
+              همواره تلاش دارد محصولات اصلی و باکیفیت را با پشتیبانی مطمئن در
+              اختیار مشتریان قرار دهد.
             </p>
 
-            {/* Contact Info */}
             <div className="flex flex-col gap-3 mt-2">
               <a
-                href="tel:+989123456789"
+                href="tel:09126157584"
                 className="flex items-center gap-3 text-[#d3d3d3] hover:text-primary duration-300 text-sm md:text-base"
               >
                 <FaPhone className="w-4 h-4" />
-                <span>۰۹۱۲-۳۴۵-۶۷۸۹</span>
+                <span>۰۹۱۲۶۱۵۷۵۸۴ - ۰۹۱۲۱۳۹۸۳۸۵ - ۰۹۳۶۵۸۶۳۹۹۸</span>
               </a>
+
               <a
-                href="mailto:info@carbon.com"
+                href="tel:02166606444"
                 className="flex items-center gap-3 text-[#d3d3d3] hover:text-primary duration-300 text-sm md:text-base"
               >
-                <FaEnvelope className="w-4 h-4" />
-                <span>info@carbon.com</span>
+                <FaPhone className="w-4 h-4" />
+                <span>۰۲۱۶۶۶۰۶۴۴۴ - ۰۲۱۶۶۶۰۶۴۴۳ - ۰۲۱۶۶۶۹۳۷۳۵</span>
               </a>
+
               <div className="flex items-start gap-3 text-[#d3d3d3] text-sm md:text-base">
                 <FaMapMarkerAlt className="w-4 h-4 mt-1 flex-shrink-0" />
-                <span>تهران، خیابان آزادی، پلاک ۱۲۳</span>
+                <span>تهران، سه راه آذری، ۴۵ متری زرند، پاساژ راهسازان</span>
               </div>
             </div>
 
-            {/* Social Media */}
             <div className="flex flex-col gap-3 mt-4">
               <span className="text-white text-base md:text-lg font-bold">
                 ما را دنبال کنید
               </span>
+
               <ul className="flex gap-4">
                 <li>
                   <a
-                    href="https://t.me/carbon"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center w-10 h-10 rounded-lg bg-white/10 hover:bg-primary duration-300 group"
-                  >
-                    <FaTelegram className="fill-secondary group-hover:fill-white duration-300 w-5 h-5" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://instagram.com/carbon"
+                    href="https://instagram.com/titan_yadak"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center w-10 h-10 rounded-lg bg-white/10 hover:bg-primary duration-300 group"
@@ -86,9 +77,10 @@ function Footer() {
                     <FaInstagram className="fill-secondary group-hover:fill-white duration-300 w-5 h-5" />
                   </a>
                 </li>
+
                 <li>
                   <a
-                    href="https://wa.me/989123456789"
+                    href="https://wa.me/989126157584"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center w-10 h-10 rounded-lg bg-white/10 hover:bg-primary duration-300 group"
@@ -96,15 +88,24 @@ function Footer() {
                     <FaWhatsapp className="fill-secondary group-hover:fill-white duration-300 w-5 h-5" />
                   </a>
                 </li>
+
+                <li>
+                  <a
+                    href="tel:02166606444"
+                    className="flex items-center justify-center w-10 h-10 rounded-lg bg-white/10 hover:bg-primary duration-300 group"
+                  >
+                    <FaPhone className="fill-secondary group-hover:fill-white duration-300 w-5 h-5" />
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
 
-          {/* Quick Links */}
           <div className="flex flex-col gap-y-5 md:w-[20%]">
             <span className="text-xl text-white md:text-2xl font-black">
               دسترسی سریع
             </span>
+
             <ul className="flex flex-col gap-y-3">
               <li>
                 <Link
@@ -116,7 +117,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href="/aboutUs"
                   className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
                 >
                   درباره ما
@@ -127,91 +128,67 @@ function Footer() {
                   href="/bulldozer-parts"
                   className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
                 >
-                  قطعات بلدوزر
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services"
-                  className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
-                >
-                  خدمات ما
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
-                >
-                  تماس با ما
+                  محصولات
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Product Categories */}
           <div className="flex flex-col gap-y-5 md:w-[20%]">
             <span className="text-xl text-white md:text-2xl font-black">
               دسته‌بندی محصولات
             </span>
+
             <ul className="flex flex-col gap-y-3">
               <li>
                 <Link
-                  href="/bulldozer-parts?category=engine"
+                  href="/bulldozer-parts?category=starter"
                   className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
                 >
-                  قطعات موتور
+                  استارت
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/bulldozer-parts?category=hydraulic"
+                  href="/bulldozer-parts?category=alternator"
                   className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
                 >
-                  سیستم هیدرولیک
+                  دینام
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/bulldozer-parts?category=transmission"
+                  href="/bulldozer-parts?category=sensor"
                   className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
                 >
-                  گیربکس و ترانسمیشن
+                  سنسور
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/bulldozer-parts?category=undercarriage"
+                  href="/bulldozer-parts?category=wiring"
                   className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
                 >
-                  زیربنای خودرو
+                  سیم‌کشی و اتصالات
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/bulldozer-parts?category=electrical"
+                  href="/bulldozer-parts?category=switch"
                   className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
                 >
-                  سیستم الکتریکی
+                  کلید و کنترلر
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Brands */}
           <div className="flex flex-col gap-y-5 md:w-[25%]">
             <span className="text-xl text-white md:text-2xl font-black">
-              برندهای همکار
+              برندهای تحت پوشش
             </span>
+
             <ul className="flex flex-col gap-y-3">
-              <li>
-                <Link
-                  href="/bulldozer-parts?brand=caterpillar"
-                  className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
-                >
-                  Caterpillar
-                </Link>
-              </li>
               <li>
                 <Link
                   href="/bulldozer-parts?brand=komatsu"
@@ -222,10 +199,18 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  href="/bulldozer-parts?brand=liebherr"
+                  href="/bulldozer-parts?brand=caterpillar"
                   className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
                 >
-                  Liebherr
+                  Caterpillar
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/bulldozer-parts?brand=hitachi"
+                  className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
+                >
+                  Hitachi
                 </Link>
               </li>
               <li>
@@ -241,19 +226,19 @@ function Footer() {
                   href="/bulldozer-parts"
                   className="text-primary text-sm md:text-base hover:text-secondary duration-300 font-bold"
                 >
-                  مشاهده همه برندها ←
+                  مشاهده همه محصولات
                 </Link>
               </li>
             </ul>
           </div>
         </section>
 
-        {/* Bottom Bar */}
         <div className="border-t border-white/20 mt-12 pt-8">
           <div className="2xl:container 2xl:mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-[#d3d3d3] text-sm md:text-base text-center md:text-right">
-              © ۱۴۰۵ کاربن. تمامی حقوق محفوظ است.
+              © ۱۴۰۵ تیتان یدک. تمامی حقوق محفوظ است.
             </p>
+
             <div className="flex gap-6">
               <Link
                 href="/privacy"

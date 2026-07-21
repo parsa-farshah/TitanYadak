@@ -39,21 +39,18 @@ function AboutUs() {
           {/* text */}
           <div className="flex flex-col justify-between lg:w-[47%] gap-y-8">
             <p className="text-white text-4xl border-r-4 border-r-secondary pr-5 font-black leading-14 md:text-5xl md:leading-20 md:w-[65%]">
-              لورم <span className="text-primary">ایپسوم</span> متن ساختگی با{" "}
-              <span className="text-primary">تولید</span> سادگی
+              تیتان <span className="text-primary">یدک</span>؛ نیم قرن{" "}
+              <span className="text-primary">تجربه</span> در تأمین قطعات
             </p>
             <p className="text-[#d3d3d3] text-sm md:text-[16px] lg:text-lg">
-              لورم ایپسوم متن ساختگی با تولید سادگی لورم ایپسوم متن ساختگی با
-              تولید سادگی لورم ایپسوم متن ساختگی با تولید سادگی لورم ایپسوم متن
-              ساختگی با تولید سادگی لورم ایپسوم متن ساختگی با تولید سادگی لورم
-              ایپسوم متن ساختگی با تولید سادگی
+              ما در تیتان یدک با بیش از ۵۰ سال سابقه، تخصصی‌ترین مرکز تأمین قطعات برقی ماشین‌آلات راهسازی هستیم. هدف ما تضمین اصالت کالا و ارائه مشاوره فنی دقیق است تا با حذف واسطه‌ها، هزینه‌های نگهداری ماشین‌آلات شما را به حداقل برسانیم و از توقف پروژه‌های عمرانی جلوگیری کنیم.
             </p>
             {/* button */}
             <div>
               <button className="px-9 w-fit py-4 relative bg-secondary overflow-hidden before:content-[] before:w-10 before:h-10 before:bg-[#03071E] before:absolute before:-left-5 before:-bottom-5 before:rotate-45 group hover:bg-primary duration-500 cursor-pointer flex">
                 <section className="flex items-center gap-2">
                   <span className="text-white text-sm md:text-lg font-bold group-hover:text-[#252525] duration-500">
-                    بیشتر بدانیم
+                    درباره ما
                   </span>
                   <ArrowLeftCircleIcon
                     className="text-white group-hover:text-[#252525] duration-500"

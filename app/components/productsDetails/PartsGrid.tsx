@@ -49,7 +49,7 @@ export default function PartsGrid({
             {CATEGORIES.map((category) => (
               <Link
                 key={category.slug}
-                href={`/bulldozer-parts/${category.slug}`}
+                href={`/productsPage/${category.slug}`}
                 className={`overflow-hidden rounded-2xl border bg-white shadow-sm transition hover:shadow-md ${
                   categoryFilter === category.slug
                     ? "border-primary ring-2 ring-primary/20"

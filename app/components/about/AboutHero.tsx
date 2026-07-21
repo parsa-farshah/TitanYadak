@@ -1,4 +1,3 @@
-// components/about/AboutHero.tsx
 import Image from "next/image";
 
 export default function AboutHero() {
@@ -13,11 +12,11 @@ export default function AboutHero() {
       {/* Content */}
       <div className="relative z-20 2xl:container 2xl:mx-auto px-5 text-center">
         <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-black mb-6">
-          درباره ما
+          درباره تیتان یدک
         </h1>
         <p className="text-white/90 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-          با بیش از ۲۰ سال تجربه در زمینه واردات و توزیع ماشین‌آلات سنگین، ما
-          همواره در کنار شما هستیم
+          با تکیه بر دهه‌ها تجربه در تأمین و توزیع قطعات برقی ماشین‌آلات راهسازی
+          و معدنی، ما همراهی مطمئن برای تداوم عملکرد دستگاه‌های شما هستیم.
         </p>
       </div>
 

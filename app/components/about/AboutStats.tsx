@@ -1,10 +1,9 @@
-// components/about/AboutStats.tsx
 export default function AboutStats() {
   const stats = [
-    { number: "+20", label: "سال تجربه" },
-    { number: "+5000", label: "مشتری راضی" },
-    { number: "+500", label: "نوع محصول" },
-    { number: "24/7", label: "پشتیبانی" },
+    { number: "+20", label: "سال تجربه تخصصی" },
+    { number: "+500", label: "تأمین موفق قطعه" },
+    { number: "+500", label: "نوع قطعه برقی" },
+    { number: "24/7", label: "پاسخگویی و مشاوره" },
   ];
 
   return (
@@ -14,13 +13,13 @@ export default function AboutStats() {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="relative p-8 bg-white overflow-hidden group cursor-pointer
+              className="relative p-8 bg-primary overflow-hidden group cursor-pointer
                 before:content-[''] before:w-10 before:h-10 md:before:w-20 md:before:h-20
                 before:bg-[#F5F5F5] before:absolute before:-bottom-5 before:-left-5
                 md:before:-bottom-10 md:before:-left-10 before:rotate-45 before:duration-500
                 "
             >
-              <h3 className="text-4xl md:text-5xl font-black text-primary mb-3 group-hover:text-secondary duration-500">
+              <h3 className="text-4xl md:text-5xl font-black text-black mb-3 group-hover:text-secondary duration-500">
                 {stat.number}
               </h3>
               <p className="text-[#252525] text-base md:text-lg font-bold">

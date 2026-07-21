@@ -23,10 +23,9 @@ interface NavItem {
 
 const pages: NavItem[] = [
   { label: "خانه", href: "/" },
-  { label: "درباره ما", href: "/about" },
-  { label: "قطعات بلدوزر", href: "/bulldozer-parts" },
-  { label: "خدمات ما", href: "/services" },
-  { label: "تماس با ما", href: "/contact" },
+  { label: "درباره ما", href: "/aboutUs" },
+  { label: "محصولات", href: "/products" },
+
 ];
 
 interface MobileMenuProps {
@@ -39,8 +38,7 @@ export function MobileMenu({ currentPage }: MobileMenuProps) {
   return (
     <div className="relative">
       <div
-        className="p-3 bg-secondary lg:hidden group hover:bg-primary duration-500 cursor-pointer relative overflow-hidden
-         "
+        className="p-3 bg-secondary lg:hidden group hover:bg-primary duration-500 cursor-pointer relative overflow-hidden"
         onClick={() => setIsOpen(true)}
       >
         <Bars3Icon
@@ -56,18 +54,18 @@ export function MobileMenu({ currentPage }: MobileMenuProps) {
         </DrawerTrigger>
         <DrawerContent className="h-full w-80 p-0 bg-white !rounded-none !border-0 flex flex-col">
           {/* Header with Logo */}
-          <DrawerHeader className="border-b border-gray-200 p-6 bg-[#F5F5F5]">
+          <DrawerHeader className="border-b border-gray-100 p-6 bg-[#F5F5F5]">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <Image
                   src="/images/logo.png"
-                  alt="کاربن"
-                  width={48}
-                  height={48}
-                  loading="lazy"
+                  alt="تیتان یدک"
+                  width={40}
+                  height={40}
+                  className="object-contain"
                 />
-                <DrawerTitle className="text-2xl font-black text-[#03071E]">
-                  کاربن
+                <DrawerTitle className="text-xl font-black text-[#03071E]">
+                  تیتان یدک
                 </DrawerTitle>
               </div>
               <DrawerClose asChild>
@@ -94,98 +92,53 @@ export function MobileMenu({ currentPage }: MobileMenuProps) {
                       }`}
                   >
                     <span className="relative z-10">{page.label}</span>
-                    {currentPage === page.href && (
-                      <div className="absolute inset-0 bg-primary">
-                        <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-secondary rotate-45" />
-                      </div>
-                    )}
                   </Link>
                 </li>
               ))}
             </ul>
-
-            {/* Quick Actions */}
-            <div className="mt-8 space-y-3">
-              <Link
-                href="/bulldozer-parts"
-                onClick={() => setIsOpen(false)}
-                className="block w-full py-3 px-4 text-center bg-secondary text-white font-bold rounded-lg
-                  hover:bg-primary duration-300 relative overflow-hidden group"
-              >
-                <span className="relative z-10">مشاهده محصولات</span>
-                <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-[#080F2F] rotate-45 group-hover:bg-[#03071E] duration-300" />
-              </Link>
-              <Link
-                href="/contact"
-                onClick={() => setIsOpen(false)}
-                className="block w-full py-3 px-4 text-center border-2 border-[#03071E] text-[#03071E] font-bold rounded-lg
-                  hover:bg-[#03071E] hover:text-white duration-300"
-              >
-                درخواست مشاوره
-              </Link>
-            </div>
           </nav>
 
           {/* Footer with Contact & Social */}
-          <DrawerFooter className="border-t border-gray-200 p-6 mt-auto bg-[#F5F5F5]">
+          <DrawerFooter className="border-t border-gray-100 p-6 mt-auto bg-[#F5F5F5]">
             {/* Contact */}
             <div className="mb-4">
               <a
-                href="tel:+989123456789"
+                href="tel:+989120000000"
                 className="flex items-center gap-3 text-[#03071E] hover:text-primary duration-300 mb-3"
               >
-                <div className="p-2 bg-white rounded-lg">
-                  <FaPhone className="w-4 h-4" />
+                <div className="p-2 bg-white rounded-lg border border-gray-200">
+                  <FaPhone className="w-4 h-4 text-primary" />
                 </div>
                 <div className="flex flex-col text-right">
-                  <span className="text-xs text-gray-600">تماس با ما</span>
-                  <span className="text-sm font-bold">۰۹۱۲-۳۴۵-۶۷۸۹</span>
+                  <span className="text-xs text-gray-500">تماس با ما</span>
+                  <span className="text-sm font-bold">۰۹۱۲-۰۰۰-۰۰۰۰</span>
                 </div>
               </a>
             </div>
 
             {/* Social Media */}
             <div className="flex flex-col gap-3">
-              <span className="text-sm font-bold text-[#03071E]">
+              <span className="text-sm font-bold text-[#03071E] text-center">
                 ما را دنبال کنید
               </span>
               <div className="flex gap-3 justify-center">
-                <a
-                  href="https://t.me/carbon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center w-10 h-10 rounded-lg bg-white hover:bg-primary duration-300 group"
-                >
-                  <FaTelegram className="fill-secondary group-hover:fill-white duration-300 w-5 h-5" />
-                </a>
-                <a
-                  href="https://instagram.com/carbon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center w-10 h-10 rounded-lg bg-white hover:bg-primary duration-300 group"
-                >
-                  <FaInstagram className="fill-secondary group-hover:fill-white duration-300 w-5 h-5" />
-                </a>
-                <a
-                  href="https://wa.me/989123456789"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center w-10 h-10 rounded-lg bg-white hover:bg-primary duration-300 group"
-                >
-                  <FaWhatsapp className="fill-secondary group-hover:fill-white duration-300 w-5 h-5" />
-                </a>
+                {[
+                  { icon: FaTelegram, href: "#" },
+                  { icon: FaInstagram, href: "#" },
+                  { icon: FaWhatsapp, href: "#" },
+                ].map((social, idx) => (
+                  <a
+                    key={idx}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-10 h-10 rounded-lg bg-white border border-gray-200 hover:bg-primary duration-300 group"
+                  >
+                    <social.icon className="fill-secondary group-hover:fill-white duration-300 w-5 h-5" />
+                  </a>
+                ))}
               </div>
             </div>
-
-            {/* Close Button */}
-            <DrawerClose asChild>
-              <Button
-                variant="outline"
-                className="w-full mt-4 border-2 border-gray-300 hover:border-[#03071E] hover:bg-[#03071E] hover:text-white duration-300"
-              >
-                بستن منو
-              </Button>
-            </DrawerClose>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>
