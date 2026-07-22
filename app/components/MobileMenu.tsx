@@ -25,7 +25,6 @@ const pages: NavItem[] = [
   { label: "خانه", href: "/" },
   { label: "درباره ما", href: "/aboutUs" },
   { label: "محصولات", href: "/products" },
-
 ];
 
 interface MobileMenuProps {
@@ -58,7 +57,7 @@ export function MobileMenu({ currentPage }: MobileMenuProps) {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <Image
-                  src="/images/logo.png"
+                  src="/images/logoMain.png"
                   alt="تیتان یدک"
                   width={40}
                   height={40}
@@ -69,7 +68,7 @@ export function MobileMenu({ currentPage }: MobileMenuProps) {
                 </DrawerTitle>
               </div>
               <DrawerClose asChild>
-                <button className="p-2 hover:bg-white rounded-lg duration-300">
+                <button className="p-2 hover:bg-white rounded-lg duration-300 cursor-pointer">
                   <XMarkIcon className="w-6 h-6 text-[#03071E]" />
                 </button>
               </DrawerClose>
@@ -101,9 +100,9 @@ export function MobileMenu({ currentPage }: MobileMenuProps) {
           {/* Footer with Contact & Social */}
           <DrawerFooter className="border-t border-gray-100 p-6 mt-auto bg-[#F5F5F5]">
             {/* Contact */}
-            <div className="mb-4">
+            <div className="mb-4 flex justify-between">
               <a
-                href="tel:+989120000000"
+                href="tel:+989126157584"
                 className="flex items-center gap-3 text-[#03071E] hover:text-primary duration-300 mb-3"
               >
                 <div className="p-2 bg-white rounded-lg border border-gray-200">
@@ -111,7 +110,19 @@ export function MobileMenu({ currentPage }: MobileMenuProps) {
                 </div>
                 <div className="flex flex-col text-right">
                   <span className="text-xs text-gray-500">تماس با ما</span>
-                  <span className="text-sm font-bold">۰۹۱۲-۰۰۰-۰۰۰۰</span>
+                  <span className="text-sm font-bold">۰۹۱۲۶۱۵۷۵۸۴</span>
+                </div>
+              </a>
+              <a
+                href="tel:+982166693735"
+                className="flex items-center gap-3 text-[#03071E] hover:text-primary duration-300 mb-3"
+              >
+                <div className="p-2 bg-white rounded-lg border border-gray-200">
+                  <FaPhone className="w-4 h-4 text-primary" />
+                </div>
+                <div className="flex flex-col text-right">
+                  <span className="text-xs text-gray-500">تماس با ما</span>
+                  <span className="text-sm font-bold">۰۲۱۶۶۶۹۳۷۳۵</span>
                 </div>
               </a>
             </div>
@@ -123,9 +134,9 @@ export function MobileMenu({ currentPage }: MobileMenuProps) {
               </span>
               <div className="flex gap-3 justify-center">
                 {[
-                  { icon: FaTelegram, href: "#" },
-                  { icon: FaInstagram, href: "#" },
-                  { icon: FaWhatsapp, href: "#" },
+                  { icon: FaTelegram, href: "https://t.me/Amirhha70" },
+                  { icon: FaInstagram, href: "https://www.instagram.com/titan_yadak?utm_source=qr&igsh=MTZidmM0ajdmb3Rldg==" },
+                  { icon: FaWhatsapp, href: "https://wa.me/989126157584" },
                 ].map((social, idx) => (
                   <a
                     key={idx}

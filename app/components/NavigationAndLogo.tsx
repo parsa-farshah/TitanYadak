@@ -49,9 +49,9 @@ function NavigationAndLogo({ currentPage }: NavigationAndLogoProps) {
               </li>
               <li>
                 <a
-                  href="/products"
+                  href="/productsPage"
                   className={
-                    currentPage === "/products"
+                    currentPage === "/productsPage"
                       ? "text-primary"
                       : "text-black hover:text-primary"
                   }

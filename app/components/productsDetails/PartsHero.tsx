@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 
 export default function PartsHero() {
@@ -9,7 +7,7 @@ export default function PartsHero() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/bgMain.jpg"
-          alt="قطعات بلدوزر"
+          alt="قطعات ماشین‌آلات راهسازی"
           fill
           className="object-cover"
           priority
@@ -21,11 +19,12 @@ export default function PartsHero() {
       <div className="relative z-10 2xl:container 2xl:mx-auto px-5 md:px-10 py-20 md:py-32">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            قطعات اصلی بلدوزر
+            تأمین تخصصی قطعات برقی ماشین‌آلات راهسازی
           </h1>
           <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
-            بهترین و با کیفیت‌ترین قطعات یدکی بلدوزر را از ما بخواهید. تمامی
-            قطعات با گارانتی اصالت و کیفیت عرضه می‌شوند.
+            تیتان یدک با بیش از ۵۰ سال تجربه، انواع استارت، دینام، شیربرقی،
+            سنسور و دیگر قطعات برقی ماشین‌آلات سنگین را با تضمین اصالت و کیفیت
+            تأمین می‌کند.
           </p>
         </div>
       </div>

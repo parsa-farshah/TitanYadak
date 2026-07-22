@@ -8,7 +8,7 @@ function OurProducts() {
       title: "استارت و تجهیزات",
       description:
         "تأمین انواع استارت‌های اصلی و باکیفیت برای راه‌اندازی مطمئن ماشین‌آلات راهسازی و معدنی در شرایط کاری سنگین.",
-      href: "/bulldozer-parts?category=starter",
+      href: "/productsPage",
       image: "/images/products/starter/starter-komatsu-pc220-7.jpg",
       alt: "استارت ماشین‌آلات راهسازی",
     },
@@ -16,7 +16,7 @@ function OurProducts() {
       title: "دینام",
       description:
         "ارائه دینام و آلترناتورهای اصلی برای حفظ پایداری سیستم شارژ و تأمین برق مورد نیاز تجهیزات الکتریکی ماشین‌آلات سنگین.",
-      href: "/bulldozer-parts?category=alternator",
+      href: "/productsPage",
       image: "/images/products/alternator/alternator-komatsu-pc220-7.jpg",
       alt: "دینام ماشین‌آلات راهسازی",
     },
@@ -24,7 +24,7 @@ function OurProducts() {
       title: "شیربرقی (خاموش‌کن)",
       description:
         "تأمین انواع شیربرقی و سلونویید با عملکرد دقیق برای کنترل مطمئن جریان سوخت و خاموش شدن ایمن موتور دستگاه.",
-      href: "/bulldozer-parts?category=solenoid",
+      href: "/productsPage",
       image: "/images/products/solenoid/solenoid-gearbox-komatsu-wa470-3.jpg",
       alt: "شیربرقی ماشین‌آلات راهسازی",
     },

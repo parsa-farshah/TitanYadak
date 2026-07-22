@@ -69,7 +69,7 @@ function Footer() {
               <ul className="flex gap-4">
                 <li>
                   <a
-                    href="https://instagram.com/titan_yadak"
+                    href="https://www.instagram.com/titan_yadak?utm_source=qr&igsh=MTZidmM0ajdmb3Rldg=="
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center w-10 h-10 rounded-lg bg-white/10 hover:bg-primary duration-300 group"
@@ -91,7 +91,7 @@ function Footer() {
 
                 <li>
                   <a
-                    href="tel:02166606444"
+                     href="tel:+989126157584"
                     className="flex items-center justify-center w-10 h-10 rounded-lg bg-white/10 hover:bg-primary duration-300 group"
                   >
                     <FaPhone className="fill-secondary group-hover:fill-white duration-300 w-5 h-5" />

@@ -18,12 +18,12 @@ function AccordionAndImg() {
       </div>
       <div className="2xl:container 2xl:mx-auto flex flex-col gap-y-10 items-center   relative pb-20 mt-20 md:mt-36 px-5 lg:flex-row lg:justify-between">
         {/* ------------------ image -------------------------- */}
-        <div className="relative z-20 bg-primary p-5 h-screen overflow-hidden w-full  mt-20 lg:w-[47%]">
+        <div className="relative z-20 bg-primary p-5 h-[600px] overflow-hidden w-full  mt-20 lg:w-[47%]">
           {/* decorative shapes */}
           <div className="absolute inset-0 overflow-hidden">
             <div className="overflow-hidden before:content-[] before:w-10 before:h-10 md:before:w-20 md:before:h-20 md:before:-top-10 md:before:-left-10 before:bg-[#f5f5f5] before:absolute before:z-30 before:-left-5 before:-top-5 before:rotate-45 duration-500 cursor-pointer flex flex-col after:content-[] after:w-10 after:h-10 md:after:w-20 md:after:h-20 md:after:-bottom-10 md:after:-right-10 after:bg-[#f5f5f5] after:absolute after:-right-5 after:-bottom-5 after:rotate-45">
               {/* image */}
-              <div className="absolute inset-0 h-screen w-full">
+              <div className="absolute inset-0 h-full w-full">
                 <Image
                   src="/images/about.jpg"
                   alt="about"

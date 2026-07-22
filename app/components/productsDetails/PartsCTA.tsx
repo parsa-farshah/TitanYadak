@@ -30,21 +30,27 @@ export default function PartsCTA() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             {/* Phone Button */}
-            <button className="group relative bg-primary hover:bg-secondary text-[#03071E] px-8 py-4 rounded-xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-2xl min-w-[200px]">
+            <a
+              href="tel:+989126157584"
+              className="group relative bg-primary hover:bg-secondary text-[#03071E] px-8 py-4 rounded-xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-2xl min-w-[200px]"
+            >
               <span className="relative z-10 flex items-center justify-center gap-3">
                 <Phone className="w-5 h-5 group-hover:rotate-12 transition-transform" />
                 تماس تلفنی
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-secondary to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </button>
+            </a>
 
             {/* WhatsApp Button */}
-            <button className="group relative bg-white hover:bg-primary text-[#03071E] px-8 py-4 rounded-xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-2xl min-w-[200px]">
+            <a
+              href="https://wa.me/989126157584"
+              className="group relative bg-white hover:bg-primary text-[#03071E] px-8 py-4 rounded-xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-2xl min-w-[200px]"
+            >
               <span className="relative z-10 flex items-center justify-center gap-3">
                 <MessageCircle className="w-5 h-5 group-hover:scale-110 transition-transform" />
                 مشاوره آنلاین
               </span>
-            </button>
+            </a>
           </div>
 
           {/* Stats */}
