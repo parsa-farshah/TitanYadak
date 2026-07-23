@@ -11,6 +11,7 @@ import {
 function Footer() {
   return (
     <div
+      id="footer"
       className="relative overflow-hidden bg-cover bg-center bg-fixed"
       style={{ backgroundImage: "url('/images/bgMain.jpg')" }}
     >
@@ -33,9 +34,9 @@ function Footer() {
 
             <p className="text-[#d3d3d3] text-sm md:text-base leading-7">
               تیتان یدک با تکیه بر سال‌ها تجربه، به‌صورت تخصصی در زمینه تأمین،
-              واردات و فروش قطعات برقی ماشین‌آلات راهسازی فعالیت می‌کند و
-              همواره تلاش دارد محصولات اصلی و باکیفیت را با پشتیبانی مطمئن در
-              اختیار مشتریان قرار دهد.
+              واردات و فروش قطعات برقی ماشین‌آلات راهسازی فعالیت می‌کند و همواره
+              تلاش دارد محصولات اصلی و باکیفیت را با پشتیبانی مطمئن در اختیار
+              مشتریان قرار دهد.
             </p>
 
             <div className="flex flex-col gap-3 mt-2">
@@ -57,7 +58,9 @@ function Footer() {
 
               <div className="flex items-start gap-3 text-[#d3d3d3] text-sm md:text-base">
                 <FaMapMarkerAlt className="w-4 h-4 mt-1 flex-shrink-0" />
-                <span>تهران، سه راه آذری، ۴۵ متری زرند، پاساژ راهسازان</span>
+                <span>
+                  تهران، سه راه آذری، ۴۵ متری زرند، پاساژ راهسازان پلاک 14
+                </span>
               </div>
             </div>
 
@@ -91,10 +94,53 @@ function Footer() {
 
                 <li>
                   <a
-                     href="tel:+989126157584"
+                    href="tel:+989126157584"
                     className="flex items-center justify-center w-10 h-10 rounded-lg bg-white/10 hover:bg-primary duration-300 group"
                   >
                     <FaPhone className="fill-secondary group-hover:fill-white duration-300 w-5 h-5" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://t.me/Amirhha70" 
+                    target="_blank"
+                    className="flex items-center justify-center w-10 h-10 rounded-lg bg-white/10 hover:bg-primary duration-300 group"
+                  >
+                    <FaTelegram className="fill-secondary group-hover:fill-white duration-300 w-5 h-5" />
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://ble.ir/amirhashemi1370"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-10 h-10 rounded-lg bg-white/10 hover:bg-primary duration-300 group"
+                  >
+                    <Image
+                      src="/images/socials/bale.png"
+                      alt="بله"
+                      width={20}
+                      height={20}
+                      className="opacity-70 group-hover:opacity-100 duration-300"
+                    />
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://rubika.ir/amirhashemi70"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-10 h-10 rounded-lg bg-white/10 hover:bg-primary duration-300 group"
+                  >
+                    <Image
+                      src="/images/socials/rubika.png"
+                      alt="روبیکا"
+                      width={20}
+                      height={20}
+                      className="opacity-70 group-hover:opacity-100 duration-300"
+                    />
                   </a>
                 </li>
               </ul>

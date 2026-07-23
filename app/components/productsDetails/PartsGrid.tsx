@@ -50,9 +50,9 @@ export default function PartsGrid({
               <Link
                 key={category.slug}
                 href={`/productsPage/${category.slug}`}
-                className={`overflow-hidden rounded-2xl border bg-white shadow-sm transition hover:shadow-md ${
+                className={`overflow-hidden  border bg-white shadow-sm transition hover:shadow-md ${
                   categoryFilter === category.slug
-                    ? "border-primary ring-2 ring-primary/20"
+                    ? "border-primary ring-2 ring-primary/20 shadow-xl shadow-primary/30"
                     : "border-gray-200"
                 }`}
               >

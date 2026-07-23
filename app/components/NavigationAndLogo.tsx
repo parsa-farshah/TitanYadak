@@ -1,4 +1,4 @@
-// components/NavigationAndLogo.tsx
+"use client";
 import { ArrowLeftCircleIcon } from "lucide-react";
 import Image from "next/image";
 import React from "react";
@@ -10,6 +10,17 @@ interface NavigationAndLogoProps {
 }
 
 function NavigationAndLogo({ currentPage }: NavigationAndLogoProps) {
+  const scrollToFooter = () => {
+    document.getElementById("footer")?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToAbout = () => {
+    if (currentPage === "/") {
+      document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      document.getElementById("footer")?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="relative overflow-hidden bg-cover bg-center bg-fixed bg-white">
       <div className="py-5 relative z-10 2xl:container 2xl:mx-auto border-b-2 border-b-[#121741] px-6">
@@ -73,11 +84,15 @@ function NavigationAndLogo({ currentPage }: NavigationAndLogoProps) {
               </li>
               <li>
                 <a
-                  href="/contact"
+                  href="#footer"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToFooter();
+                  }}
                   className={
                     currentPage === "/contact"
-                      ? "text-primary"
-                      : "text-black hover:text-primary"
+                      ? "text-primary cursor-pointer"
+                      : "text-black hover:text-primary cursor-pointer"
                   }
                 >
                   تماس
@@ -87,7 +102,14 @@ function NavigationAndLogo({ currentPage }: NavigationAndLogoProps) {
           </section>
 
           {/* left button */}
-          <button className="hidden lg:flex justify-self-end px-9 py-4 relative bg-secondary overflow-hidden before:content-[] before:w-10 before:h-10 before:bg-white before:absolute before:-left-5 before:-bottom-5 before:rotate-45 group hover:bg-primary duration-500 cursor-pointer">
+          <a
+            href="#about"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToAbout();
+            }}
+            className="hidden lg:flex justify-self-end px-9 py-4 relative bg-secondary overflow-hidden before:content-[] before:w-10 before:h-10 before:bg-white before:absolute before:-left-5 before:-bottom-5 before:rotate-45 group hover:bg-primary duration-500 cursor-pointer"
+          >
             <section className="flex items-center gap-2">
               <span className="text-white text-lg font-bold group-hover:text-black duration-500">
                 درباره ما
@@ -98,7 +120,7 @@ function NavigationAndLogo({ currentPage }: NavigationAndLogoProps) {
                 height={18}
               />
             </section>
-          </button>
+          </a>
         </div>
       </div>
     </div>

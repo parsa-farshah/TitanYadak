@@ -18,10 +18,9 @@ export default function PartCard({
   category,
 }: PartCardProps) {
   return (
-    <div className="group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+    <div className="group relative bg-white  overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-primary/20 to-transparent rounded-bl-[100px] -z-0"></div>
-      <div className="absolute bottom-0 left-0 w-16 h-16 bg-gradient-to-tr from-secondary/20 to-transparent rounded-tr-[100px] -z-0"></div>
 
       {/* Image Container */}
       <div className="relative h-56 overflow-hidden">
@@ -36,7 +35,7 @@ export default function PartCard({
       {/* Content */}
       <div className="p-6 relative z-10">
         <div className="mb-2">
-          <span className="text-xs font-medium text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
+          <span className="text-xs font-medium text-gray-500 bg-gray-100 px-3 py-1 ">
             {category}
           </span>
         </div>
@@ -45,20 +44,11 @@ export default function PartCard({
           {name}
         </h3>
 
-        <div className="flex items-center justify-between mb-4">
-          <div>
-            <p className="text-xs text-gray-500 mb-1">قیمت:</p>
-            <p className="text-2xl font-bold text-secondary">{price}</p>
-          </div>
-        </div>
-
         {/* CTA Button */}
-        <button className="relative w-full bg-[#03071E] text-white py-3 rounded-xl font-medium overflow-hidden group/btn transition-all duration-300 hover:bg-primary hover:text-[#03071E]">
+        <button className="relative w-full bg-[#03071E] text-white py-3 font-medium overflow-hidden group/btn transition-all duration-300 hover:bg-primary hover:text-[#03071E]">
           <span className="relative z-10 flex items-center justify-center gap-2">
-            مشاهده جزئیات
-            <ArrowLeftCircle className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
+            موجود
           </span>
-          <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
         </button>
       </div>
     </div>

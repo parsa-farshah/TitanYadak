@@ -4,7 +4,7 @@ import React from "react";
 
 function AboutUs() {
   return (
-    <div className="bg-[#03071E] relative">
+    <div id="about" className="bg-[#03071E] relative">
       {/* shape background */}
       <div className="absolute top-0 left-0 w-full h-[100px]">
         <svg

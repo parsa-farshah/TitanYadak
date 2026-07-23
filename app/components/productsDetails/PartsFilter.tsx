@@ -50,7 +50,7 @@ export default function PartsFilter({
   return (
     <section className="bg-[#F5F5F5] py-10 md:py-16" dir="rtl">
       <div className="2xl:container 2xl:mx-auto px-5 md:px-10">
-        <div className="rounded-2xl bg-white p-6 shadow-lg md:p-8">
+        <div className=" bg-white p-6 shadow-lg md:p-8">
           <div className="mb-6">
             <div className="relative">
               <Search className="absolute right-4 top-1/2 z-10 h-5 w-5 -translate-y-1/2 text-gray-400" />
@@ -59,7 +59,7 @@ export default function PartsFilter({
                 placeholder="جستجوی قطعات..."
                 value={searchQuery}
                 onChange={handleSearchChange}
-                className="h-14 rounded-xl border-2 border-gray-200 pl-4 pr-12 text-base focus-visible:ring-0"
+                className="h-14  border-2 border-gray-200 pl-4 pr-12 text-base focus-visible:ring-0"
               />
             </div>
           </div>
@@ -67,18 +67,18 @@ export default function PartsFilter({
           <div className="w-40">
             <div>
               <label className="mb-2 block text-sm font-medium text-gray-700">
-                دسته‌بندی قطعه
+                دسته‌بندی قطعات
               </label>
 
               <Select value={category} onValueChange={handleCategoryChange}>
                 <SelectTrigger
                   dir="rtl"
-                  className="h-12 w-full rounded-xl border-2 border-gray-200 text-base"
+                  className="h-12 w-full  border-2 border-gray-200 text-base rounded-xs"
                 >
                   <SelectValue placeholder="همه دسته‌ها" />
                 </SelectTrigger>
 
-                <SelectContent dir="rtl" className="bg-white w-full max-h-20">
+                <SelectContent dir="rtl" className="bg-white w-full max-h-20 rounded-xs">
                   <SelectGroup>
                     {categoryItems.map((item) => (
                       <SelectItem key={item.value} value={item.value}>

@@ -1,5 +1,3 @@
-"use client";
-
 import { Phone, MessageCircle } from "lucide-react";
 import Image from "next/image";
 
@@ -32,7 +30,7 @@ export default function PartsCTA() {
             {/* Phone Button */}
             <a
               href="tel:+989126157584"
-              className="group relative bg-primary hover:bg-secondary text-[#03071E] px-8 py-4 rounded-xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-2xl min-w-[200px]"
+              className="group relative bg-primary hover:bg-secondary text-[#03071E] px-8 py-4  font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-2xl min-w-[200px]"
             >
               <span className="relative z-10 flex items-center justify-center gap-3">
                 <Phone className="w-5 h-5 group-hover:rotate-12 transition-transform" />
@@ -44,7 +42,7 @@ export default function PartsCTA() {
             {/* WhatsApp Button */}
             <a
               href="https://wa.me/989126157584"
-              className="group relative bg-white hover:bg-primary text-[#03071E] px-8 py-4 rounded-xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-2xl min-w-[200px]"
+              className="group relative bg-white hover:bg-primary text-[#03071E] px-8 py-4 font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-2xl min-w-[200px]"
             >
               <span className="relative z-10 flex items-center justify-center gap-3">
                 <MessageCircle className="w-5 h-5 group-hover:scale-110 transition-transform" />

@@ -135,8 +135,20 @@ export function MobileMenu({ currentPage }: MobileMenuProps) {
               <div className="flex gap-3 justify-center">
                 {[
                   { icon: FaTelegram, href: "https://t.me/Amirhha70" },
-                  { icon: FaInstagram, href: "https://www.instagram.com/titan_yadak?utm_source=qr&igsh=MTZidmM0ajdmb3Rldg==" },
+                  {
+                    icon: FaInstagram,
+                    href: "https://www.instagram.com/titan_yadak?utm_source=qr&igsh=MTZidmM0ajdmb3Rldg==",
+                  },
                   { icon: FaWhatsapp, href: "https://wa.me/989126157584" },
+                  { icon: FaPhone, href: "tel:+989126157584" },
+                  {
+                    icon: "/images/socials/bale.png",
+                    href: "https://ble.ir/amirhashemi1370",
+                  },
+                  {
+                    icon: "/images/socials/rubika.png",
+                    href: "https://rubika.ir/amirhashemi70",
+                  },
                 ].map((social, idx) => (
                   <a
                     key={idx}
@@ -145,7 +157,17 @@ export function MobileMenu({ currentPage }: MobileMenuProps) {
                     rel="noopener noreferrer"
                     className="flex items-center justify-center w-10 h-10 rounded-lg bg-white border border-gray-200 hover:bg-primary duration-300 group"
                   >
-                    <social.icon className="fill-secondary group-hover:fill-white duration-300 w-5 h-5" />
+                    {typeof social.icon === "string" ? (
+                      <Image
+                        src={social.icon}
+                        alt=""
+                        width={20}
+                        height={20}
+                        className="opacity-70 group-hover:opacity-100 duration-300"
+                      />
+                    ) : (
+                      <social.icon className="fill-secondary group-hover:fill-white duration-300 w-5 h-5" />
+                    )}
                   </a>
                 ))}
               </div>
