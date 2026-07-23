@@ -59,7 +59,7 @@ function OurProducts() {
         </div>
 
         {/* cards */}
-        <section className="w-full flex flex-wrap justify-between items-stretch gap-y-10 px-5">
+        <section className="w-full flex flex-wrap justify-between items-stretch gap-10 px-5">
           {products.map((product, index) => (
             <div key={index} className="w-full md:w-[48%] lg:w-[31%] flex">
               <div className="p-[30px] bg-[#ebebeb] relative w-full h-full overflow-hidden before:content-[] before:w-10 before:h-10 md:before:w-20 md:before:h-20 md:before:-bottom-10 md:before:-left-10 before:bg-[#F5F5F5] before:absolute before:-left-5 before:-bottom-5 before:-rotate-45 flex flex-col hover:-translate-y-4 duration-500">
@@ -106,7 +106,7 @@ function OurProducts() {
                 </div>
 
                 {/* image */}
-                <div>
+                <div className=" mt-6 ">
                   <figure className="relative w-full h-[400px] lg:h-[420px] hover:scale-110 duration-500">
                     <Image
                       src={product.image}

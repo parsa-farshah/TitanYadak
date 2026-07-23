@@ -35,7 +35,7 @@ function AccordionAndImg() {
           </div>
         </div>
         {/* accordion */}
-        <div className="h-fit lg:w-[47%]">
+        <div className="h-fit w-full lg:w-[47%]">
           <AccordionHome />
         </div>
       </div>
