@@ -102,7 +102,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://t.me/Amirhha70" 
+                    href="https://t.me/Amirhha70"
                     target="_blank"
                     className="flex items-center justify-center w-10 h-10 rounded-lg bg-white/10 hover:bg-primary duration-300 group"
                   >
@@ -171,7 +171,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  href="/bulldozer-parts"
+                  href="/productsPage"
                   className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
                 >
                   محصولات
@@ -188,7 +188,7 @@ function Footer() {
             <ul className="flex flex-col gap-y-3">
               <li>
                 <Link
-                  href="/bulldozer-parts?category=starter"
+                  href="/productsPage/starter"
                   className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
                 >
                   استارت
@@ -196,7 +196,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  href="/bulldozer-parts?category=alternator"
+                  href="/productsPage/alternator"
                   className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
                 >
                   دینام
@@ -204,7 +204,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  href="/bulldozer-parts?category=sensor"
+                  href="/productsPage/sensor"
                   className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
                 >
                   سنسور
@@ -212,18 +212,18 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  href="/bulldozer-parts?category=wiring"
+                  href="/productsPage/alternator-parts"
                   className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
                 >
-                  سیم‌کشی و اتصالات
+                  قطعات دینام
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/bulldozer-parts?category=switch"
+                  href="/productsPage/shut-off"
                   className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
                 >
-                  کلید و کنترلر
+                  خاموش کن
                 </Link>
               </li>
             </ul>
@@ -236,40 +236,36 @@ function Footer() {
 
             <ul className="flex flex-col gap-y-3">
               <li>
-                <Link
-                  href="/bulldozer-parts?brand=komatsu"
+                <div
                   className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
                 >
                   Komatsu
-                </Link>
+                </div>
               </li>
               <li>
-                <Link
-                  href="/bulldozer-parts?brand=caterpillar"
+                <div
                   className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
                 >
                   Caterpillar
-                </Link>
+                </div>
               </li>
               <li>
-                <Link
-                  href="/bulldozer-parts?brand=hitachi"
+                <div
                   className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
                 >
                   Hitachi
-                </Link>
+                </div>
               </li>
               <li>
-                <Link
-                  href="/bulldozer-parts?brand=volvo"
+                <div
                   className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
                 >
                   Volvo
-                </Link>
+                </div>
               </li>
               <li>
                 <Link
-                  href="/bulldozer-parts"
+                  href="/productsPage"
                   className="text-primary text-sm md:text-base hover:text-secondary duration-300 font-bold"
                 >
                   مشاهده همه محصولات
@@ -279,7 +275,7 @@ function Footer() {
           </div>
         </section>
 
-        <div className="border-t border-white/20 mt-12 pt-8">
+        {/* <div className="border-t border-white/20 mt-12 pt-8">
           <div className="2xl:container 2xl:mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-[#d3d3d3] text-sm md:text-base text-center md:text-right">
               © ۱۴۰۵ تیتان یدک. تمامی حقوق محفوظ است.
@@ -300,7 +296,7 @@ function Footer() {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

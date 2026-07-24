@@ -5,6 +5,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { BrandCarousel } from "./BrandsCarousel";
+import Link from "next/link";
 
 const WhyChooseUs = () => {
   return (
@@ -24,9 +25,9 @@ const WhyChooseUs = () => {
             سنگین شما هستیم.
           </p>
           <section className="flex items-center gap-2 group">
-            <span className="text-black text-sm font-bold cursor-pointer group-hover:text-secondary duration-500">
+            <Link href="/aboutUs" className="text-black text-sm font-bold cursor-pointer group-hover:text-secondary duration-500">
               بیشتر بدانید
-            </span>
+            </Link>
             <ArrowLeftCircleIcon
               className="text-black group-hover:text-secondary duration-500"
               width={18}

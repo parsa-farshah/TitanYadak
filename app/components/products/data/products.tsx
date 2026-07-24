@@ -152,7 +152,8 @@ export const products: Product[] = [
     category: "battery-disconnector",
     price: 450000,
     stock: 20,
-    image: "/images/products/battery-disconnector/battery-disconnector-hyundai-line9.jpg",
+    image:
+      "/images/products/battery-disconnector/battery-disconnector-hyundai-line9.jpg",
   },
   {
     id: "bd2",
@@ -161,7 +162,8 @@ export const products: Product[] = [
     category: "battery-disconnector",
     price: 400000,
     stock: 25,
-    image: "/images/products/battery-disconnector/battery-disconnector-komatsu.jpg",
+    image:
+      "/images/products/battery-disconnector/battery-disconnector-komatsu.jpg",
   },
   {
     id: "bd3",
@@ -179,7 +181,8 @@ export const products: Product[] = [
     category: "battery-disconnector",
     price: 600000,
     stock: 10,
-    image: "/images/products/battery-disconnector/battery-disconnector-volvo.jpg",
+    image:
+      "/images/products/battery-disconnector/battery-disconnector-volvo.jpg",
   },
 
   // سنسور
@@ -219,6 +222,15 @@ export const products: Product[] = [
     stock: 20,
     image: "/images/products/sensor/sensor-oil-10bar.jpg",
   },
+  {
+    id: "sn5",
+    title: "سنسور کاماریل بیل مکانیکی کوماتسو PC400",
+    slug: "sensor-komaril-komatsu-pc400",
+    category: "sensor",
+    price: 0,
+    stock: 0,
+    image: "/images/products/sensor/sensor-komaril-komatsu-pc400.jpg",
+  },
 
   // سوئیچ استارت
   {
@@ -257,7 +269,8 @@ export const products: Product[] = [
     category: "alternator-parts",
     price: 700000,
     stock: 9,
-    image: "/images/products/alternator-parts/alternator-diode-hyundai-r330-9.jpg",
+    image:
+      "/images/products/alternator-parts/alternator-diode-hyundai-r330-9.jpg",
   },
   {
     id: "ap2",
@@ -266,7 +279,8 @@ export const products: Product[] = [
     category: "alternator-parts",
     price: 850000,
     stock: 6,
-    image: "/images/products/alternator-parts/alternator-regulator-komatsu-pc220-7.jpg",
+    image:
+      "/images/products/alternator-parts/alternator-regulator-komatsu-pc220-7.jpg",
   },
   {
     id: "ap3",
@@ -275,7 +289,8 @@ export const products: Product[] = [
     category: "alternator-parts",
     price: 500000,
     stock: 8,
-    image: "/images/products/alternator-parts/alternator-bushing-komatsu-wa470-3.jpg",
+    image:
+      "/images/products/alternator-parts/alternator-bushing-komatsu-wa470-3.jpg",
   },
 
   // قطعات استارت
@@ -353,7 +368,8 @@ export const products: Product[] = [
     category: "electric-throttle",
     price: 2100000,
     stock: 5,
-    image: "/images/products/electric-throttle/electric-throttle-komatsu-pc220-7.jpg",
+    image:
+      "/images/products/electric-throttle/electric-throttle-komatsu-pc220-7.jpg",
   },
   {
     id: "et2",
@@ -362,7 +378,8 @@ export const products: Product[] = [
     category: "electric-throttle",
     price: 2250000,
     stock: 4,
-    image: "/images/products/electric-throttle/electric-throttle-hyundai-r320-7.jpg",
+    image:
+      "/images/products/electric-throttle/electric-throttle-hyundai-r320-7.jpg",
   },
   {
     id: "et3",
@@ -371,7 +388,8 @@ export const products: Product[] = [
     category: "electric-throttle",
     price: 2350000,
     stock: 3,
-    image: "/images/products/electric-throttle/electric-throttle-zoomlion-ze230.jpg",
+    image:
+      "/images/products/electric-throttle/electric-throttle-zoomlion-ze230.jpg",
   },
 
   // سلونوئید
@@ -410,5 +428,75 @@ export const products: Product[] = [
     price: 1950000,
     stock: 3,
     image: "/images/products/solenoid/solenoid-gearbox-komatsu-wa470-3.jpg",
+  },
+
+  // چراغ
+  {
+    id: "lg1",
+    title: "چراغ مستطیلی زرد",
+    slug: "rectangular-yellow-light",
+    category: "light",
+    price: 0,
+    stock: 0,
+    image: "/images/products/light/rectangular-yellow-light.jpg",
+  },
+  {
+    id: "lg2",
+    title: "چراغ لودر چینی",
+    slug: "chinese-loader-light",
+    category: "light",
+    price: 0,
+    stock: 0,
+    image: "/images/products/light/chinese-loader-light.jpg",
+  },
+  {
+    id: "lg3",
+    title: "چراغ LED",
+    slug: "led-light",
+    category: "light",
+    price: 0,
+    stock: 0,
+    image: "/images/products/light/led-light.jpg",
+  },
+
+  // قطعات کولر بخاری
+  {
+    id: "ac1",
+    title: "فن کولر بخاری بیل مکانیکی هیوندا",
+    slug: "heater-ac-fan-hyundai-excavator",
+    category: "ac-heater-parts",
+    price: 0,
+    stock: 0,
+    image:
+      "/images/products/ac-heater-parts/heater-ac-fan-hyundai-excavator.jpg",
+  },
+  {
+    id: "ac2",
+    title: "رادیات بخاری بیل مکانیکی زوملاین ZE230",
+    slug: "heater-radiator-zoomlion-ze230",
+    category: "ac-heater-parts",
+    price: 0,
+    stock: 0,
+    image:
+      "/images/products/ac-heater-parts/heater-radiator-zoomlion-ze230.jpg",
+  },
+  {
+    id: "ac3",
+    title: "رادیات بخاری بیل مکانیکی کوماتسو PC220-6",
+    slug: "heater-radiator-komatsu-pc220-6",
+    category: "ac-heater-parts",
+    price: 0,
+    stock: 0,
+    image:
+      "/images/products/ac-heater-parts/heater-radiator-komatsu-pc220-6.jpg",
+  },
+  {
+    id: "ac4",
+    title: "رادیات کولر بیل مکانیکی کوماتسو PC220-7",
+    slug: "ac-radiator-komatsu-pc220-7",
+    category: "ac-heater-parts",
+    price: 0,
+    stock: 0,
+    image: "/images/products/ac-heater-parts/ac-radiator-komatsu-pc220-7.jpg",
   },
 ];

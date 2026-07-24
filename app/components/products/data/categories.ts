@@ -22,7 +22,8 @@ export const CATEGORIES = [
   {
     slug: "battery-disconnector",
     label: "قطع کن باتری",
-    image: "/images/products/battery-disconnector/battery-disconnector-hyundai-line9.jpg",
+    image:
+      "/images/products/battery-disconnector/battery-disconnector-hyundai-line9.jpg",
   },
   {
     slug: "sensor",
@@ -37,7 +38,8 @@ export const CATEGORIES = [
   {
     slug: "alternator-parts",
     label: "قطعات دینام",
-    image: "/images/products/alternator-parts/alternator-bushing-komatsu-wa470-3.jpg",
+    image:
+      "/images/products/alternator-parts/alternator-bushing-komatsu-wa470-3.jpg",
   },
   {
     slug: "starter-parts",
@@ -52,11 +54,22 @@ export const CATEGORIES = [
   {
     slug: "electric-throttle",
     label: "گاز برقی",
-    image: "/images/products/electric-throttle/electric-throttle-komatsu-pc220-7.jpg",
+    image:
+      "/images/products/electric-throttle/electric-throttle-komatsu-pc220-7.jpg",
   },
   {
     slug: "solenoid",
     label: "سلونوئید",
     image: "/images/products/solenoid/solenoid-gearbox-komatsu-wa470-3.jpg",
+  },
+  {
+    slug: "light",
+    label: "چراغ",
+    image: "/images/products/light/chinese-loader-light.jpg",
+  },
+  {
+    slug: "ac-heater-parts",
+    label: "قطعات کولر بخاری",
+    image: "/images/products/ac-heater-parts/heater-radiator-komatsu-pc220-6.jpg",
   },
 ];

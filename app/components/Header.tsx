@@ -5,6 +5,7 @@ import { AvatarComponent } from "./AvatarComponent";
 import { Plus, PlusCircle } from "lucide-react";
 import { MobileMenu } from "./MobileMenu";
 import NavigationAndLogo from "./NavigationAndLogo";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -34,9 +35,9 @@ const Header = () => {
               قرار دارد.
             </p>
             <section className="flex items-center gap-2 group">
-              <span className="text-black text-sm font-bold group-hover:text-secondary duration-500">
+              <Link href="/aboutUs" className="text-black text-sm font-bold group-hover:text-secondary duration-500">
                 بیشتر بدانید
-              </span>
+              </Link>
               <ArrowLeftCircleIcon
                 className="text-black group-hover:text-secondary duration-500"
                 width={18}
@@ -59,9 +60,9 @@ const Header = () => {
             <div className="mt-6">
               <button className="px-9 py-4 relative bg-secondary overflow-hidden before:content-[] before:w-10 before:h-10 before:bg-[#03071E] before:absolute before:-left-5 before:-bottom-5 before:rotate-45 group hover:bg-primary duration-500 cursor-pointer flex">
                 <section className="flex items-center gap-2">
-                  <span className="text-white text-sm md:text-lg font-bold group-hover:text-black duration-500">
+                  <Link href="/productsPage" className="text-white text-sm md:text-lg font-bold group-hover:text-black duration-500">
                     مشاهده محصولات
-                  </span>
+                  </Link>
                   <ArrowLeftCircleIcon
                     className="text-white"
                     width={18}

@@ -7,6 +7,7 @@ import {
   ShoppingCartIcon,
   ToggleLeftIcon,
 } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const services = [
@@ -79,9 +80,9 @@ function OurService() {
               </p>
 
               <section className="flex items-center gap-2 group">
-                <span className="text-black text-sm font-bold cursor-pointer group-hover:text-secondary duration-500">
+                <Link href="/aboutUs" className="text-black text-sm font-bold cursor-pointer group-hover:text-secondary duration-500">
                   بیشتر بدانید
-                </span>
+                </Link>
                 <ArrowLeftCircleIcon
                   className="text-black group-hover:text-secondary duration-500"
                   width={18}
@@ -112,17 +113,6 @@ function OurService() {
                     </div>
 
                     <p className="text-[#5a5a5a]">{service.description}</p>
-
-                    <section className="flex items-center gap-2 group">
-                      <span className="text-black text-sm font-bold cursor-pointer group-hover:text-secondary duration-500">
-                        بیشتر بدانید
-                      </span>
-                      <ArrowLeftCircleIcon
-                        className="text-black group-hover:text-secondary duration-500"
-                        width={18}
-                        height={18}
-                      />
-                    </section>
                   </div>
                 </div>
               );

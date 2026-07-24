@@ -11,7 +11,9 @@ export type Category =
   | "starter-parts"
   | "ac-compressor"
   | "electric-throttle"
-  | "solenoid";
+  | "solenoid"
+  | "light"
+  | "ac-heater-parts";
 
 export interface Product {
   id: string;

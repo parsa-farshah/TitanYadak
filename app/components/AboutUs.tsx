@@ -1,5 +1,6 @@
 import { ArrowLeftCircleIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function AboutUs() {
@@ -49,9 +50,9 @@ function AboutUs() {
             <div>
               <button className="px-9 w-fit py-4 relative bg-secondary overflow-hidden before:content-[] before:w-10 before:h-10 before:bg-[#03071E] before:absolute before:-left-5 before:-bottom-5 before:rotate-45 group hover:bg-primary duration-500 cursor-pointer flex">
                 <section className="flex items-center gap-2">
-                  <span className="text-white text-sm md:text-lg font-bold group-hover:text-[#252525] duration-500">
+                  <Link href="/aboutUs" className="text-white text-sm md:text-lg font-bold group-hover:text-[#252525] duration-500">
                     درباره ما
-                  </span>
+                  </Link>
                   <ArrowLeftCircleIcon
                     className="text-white group-hover:text-[#252525] duration-500"
                     width={18}
