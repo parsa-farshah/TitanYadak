@@ -70,6 +70,6 @@ export const CATEGORIES = [
   {
     slug: "ac-heater-parts",
     label: "قطعات کولر بخاری",
-    image: "/images/products/ac-heater-parts/heater-radiator-komatsu-pc220-6.jpg",
+    image: "/images/products/ac-heater-parts/ac-radiator-komatsu-pc220-7.jpg",
   },
 ];
