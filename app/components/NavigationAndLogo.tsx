@@ -4,10 +4,13 @@ import Image from "next/image";
 import React from "react";
 import { MobileMenu } from "./MobileMenu";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface NavigationAndLogoProps {
   currentPage: string;
 }
+
+
 
 function NavigationAndLogo({ currentPage }: NavigationAndLogoProps) {
   const scrollToFooter = () => {
@@ -21,6 +24,8 @@ function NavigationAndLogo({ currentPage }: NavigationAndLogoProps) {
       document.getElementById("footer")?.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const pathname = usePathname();
   return (
     <div className="relative overflow-hidden bg-cover bg-center bg-fixed bg-white">
       <div className="py-5 relative z-10 2xl:container 2xl:mx-auto border-b-2 border-b-[#121741] px-6">
@@ -40,7 +45,7 @@ function NavigationAndLogo({ currentPage }: NavigationAndLogoProps) {
 
           {/* menu mobile */}
           <div className="lg:hidden justify-self-end">
-            <MobileMenu currentPage={currentPage} />
+            <MobileMenu currentPage={pathname} />
           </div>
 
           {/* Navigation in desktop */}
@@ -50,7 +55,7 @@ function NavigationAndLogo({ currentPage }: NavigationAndLogoProps) {
                 <a
                   href="/"
                   className={
-                    currentPage === "/"
+                    pathname === "/"
                       ? "text-primary"
                       : "text-black hover:text-primary"
                   }
@@ -62,7 +67,7 @@ function NavigationAndLogo({ currentPage }: NavigationAndLogoProps) {
                 <a
                   href="/productsPage"
                   className={
-                    currentPage === "/productsPage"
+                    pathname === "/productsPage"
                       ? "text-primary"
                       : "text-black hover:text-primary"
                   }
@@ -74,7 +79,7 @@ function NavigationAndLogo({ currentPage }: NavigationAndLogoProps) {
                 <a
                   href="/aboutUs"
                   className={
-                    currentPage === "/aboutUs"
+                    pathname === "/aboutUs"
                       ? "text-primary"
                       : "text-black hover:text-primary"
                   }
