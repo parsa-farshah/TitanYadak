@@ -69,7 +69,7 @@ function Footer() {
                 ما را دنبال کنید
               </span>
 
-              <ul className="flex gap-4">
+              <ul className="flex gap-4 flex-wrap">
                 <li>
                   <a
                     href="https://www.instagram.com/titan_yadak?utm_source=qr&igsh=MTZidmM0ajdmb3Rldg=="

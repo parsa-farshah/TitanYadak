@@ -106,24 +106,24 @@ export function MobileMenu({ currentPage }: MobileMenuProps) {
                 href="tel:+989126157584"
                 className="flex items-center gap-3 text-[#03071E] hover:text-primary duration-300 mb-3"
               >
-                <div className="p-2 bg-white rounded-lg border border-gray-200">
+                <div className="p-1 sm:p-2 bg-white rounded-lg border border-gray-200">
                   <FaPhone className="w-4 h-4 text-primary" />
                 </div>
                 <div className="flex flex-col text-right">
                   <span className="text-xs text-gray-500">تماس با ما</span>
-                  <span className="text-sm font-bold">۰۹۱۲۶۱۵۷۵۸۴</span>
+                  <span className="text-[10px] sm:text-sm font-bold">۰۹۱۲۶۱۵۷۵۸۴</span>
                 </div>
               </a>
               <a
                 href="tel:+982166693735"
                 className="flex items-center gap-3 text-[#03071E] hover:text-primary duration-300 mb-3"
               >
-                <div className="p-2 bg-white rounded-lg border border-gray-200">
+                <div className="p-1 sm:p-2 bg-white rounded-lg border border-gray-200">
                   <FaPhone className="w-4 h-4 text-primary" />
                 </div>
                 <div className="flex flex-col text-right">
                   <span className="text-xs text-gray-500">تماس با ما</span>
-                  <span className="text-sm font-bold">۰۲۱۶۶۶۹۳۷۳۵</span>
+                  <span className="text-[10px] sm:text-sm font-bold">۰۲۱۶۶۶۹۳۷۳۵</span>
                 </div>
               </a>
             </div>
@@ -133,7 +133,7 @@ export function MobileMenu({ currentPage }: MobileMenuProps) {
               <span className="text-sm font-bold text-[#03071E] text-center">
                 ما را دنبال کنید
               </span>
-              <div className="flex gap-3 justify-center">
+              <div className="flex gap-3 justify-center flex-wrap">
                 {[
                   { icon: FaTelegram, href: "https://t.me/Amirhha70" },
                   {
