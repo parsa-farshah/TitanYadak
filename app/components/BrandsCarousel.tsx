@@ -17,7 +17,7 @@ const brands = [
   {
     id: 2,
     name: "Caterpillar",
-    image: "/images/brands/caterpillar.png",
+    image: "/images/brands/caterpillar2.png",
   },
   {
     id: 3,
