@@ -77,26 +77,6 @@ export default async function CategoryProductsPage({
                   <h2 className="mb-2 min-h-[3.5rem] line-clamp-2 text-lg font-bold text-[#03071E]">
                     {product.title}
                   </h2>
-
-                  <div className="mb-4 flex items-center justify-between">
-                    <div>
-                      <p className="mb-1 text-xs text-gray-500">قیمت:</p>
-                      <p className="text-2xl font-bold text-secondary">
-                        {product.price.toLocaleString("fa-IR")} تومان
-                      </p>
-                    </div>
-                  </div>
-
-                  <Link
-                    href="/contact"
-                    className="group/btn relative flex w-full items-center justify-center overflow-hidden rounded-xl bg-[#03071E] py-3 font-medium text-white transition-all duration-300 hover:bg-primary hover:text-[#03071E]"
-                  >
-                    <span className="relative z-10 flex items-center justify-center gap-2">
-                      مشاهده جزئیات
-                      <ArrowLeftCircle className="h-5 w-5 transition-transform group-hover/btn:translate-x-1" />
-                    </span>
-                    <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary opacity-0 transition-opacity duration-300 group-hover/btn:opacity-100"></div>
-                  </Link>
                 </div>
               </article>
             ))}

@@ -95,7 +95,6 @@ export default function PartsGrid({
                   key={part.id}
                   name={part.title}
                   image={part.image}
-                  price={`${part.price.toLocaleString("fa-IR")} تومان`}
                   category={
                     CATEGORIES.find(
                       (category) => category.slug === part.category,

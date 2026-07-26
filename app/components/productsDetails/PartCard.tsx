@@ -6,14 +6,12 @@ import { ArrowLeftCircle } from "lucide-react";
 interface PartCardProps {
   id: string;
   name: string;
-  price: string;
   image: string;
   category: string;
 }
 
 export default function PartCard({
   name,
-  price,
   image,
   category,
 }: PartCardProps) {

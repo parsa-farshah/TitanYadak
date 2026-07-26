@@ -20,7 +20,6 @@ export interface Product {
   title: string;
   slug: string;
   category: Category;
-  price: number;
   stock: number;
   image: string;
 }
