@@ -236,30 +236,22 @@ function Footer() {
 
             <ul className="flex flex-col gap-y-3">
               <li>
-                <div
-                  className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
-                >
+                <div className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300">
                   Komatsu
                 </div>
               </li>
               <li>
-                <div
-                  className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
-                >
+                <div className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300">
                   Caterpillar
                 </div>
               </li>
               <li>
-                <div
-                  className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
-                >
+                <div className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300">
                   Hitachi
                 </div>
               </li>
               <li>
-                <div
-                  className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
-                >
+                <div className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300">
                   Volvo
                 </div>
               </li>
@@ -297,6 +289,15 @@ function Footer() {
             </div>
           </div>
         </div> */}
+        <div className="mt-8 text-center border-t border-white/20 pt-8">
+          <a
+            href="https://www.instagram.com/parsa_dehghanpour_dv?igsh=eHkwNWhsa3I4ZWVp"
+            target="_blank"
+            className="text-[12px] md:text-sm text-[#d3d3d3] hover:text-primary duration-300"
+          >
+            Frontend Developer: Parsa Dehghan Pour Farashah
+          </a>
+        </div>
       </div>
     </div>
   );
