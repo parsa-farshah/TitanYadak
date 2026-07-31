@@ -11,16 +11,16 @@
 ## 📸 Screenshots
 
 ### 🏠 Home
-![Home](./screenshots/home.png)
+![Home](/screenshots/home.png)
 
 ### 🛍️ Products
-![Products](./screenshots/products.png)
+![Products](/screenshots/products.png)
 
 ### 📂 Category Filter
-![Category](./screenshots/category.png)
+![Category](/screenshots/category.png)
 
 ### ℹ️ About
-![About](./screenshots/about.png)
+![About](/screenshots/about.png)
 
 ---
 
