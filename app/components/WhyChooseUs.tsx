@@ -25,7 +25,7 @@ const WhyChooseUs = () => {
             سنگین شما هستیم.
           </p>
           <section className="flex items-center gap-2 group">
-            <Link href="/aboutUs" className="text-black text-sm font-bold cursor-pointer group-hover:text-secondary duration-500">
+            <Link href="/aboutus" className="text-black text-sm font-bold cursor-pointer group-hover:text-secondary duration-500">
               بیشتر بدانید
             </Link>
             <ArrowLeftCircleIcon

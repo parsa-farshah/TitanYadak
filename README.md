@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔧 Titan Yadak
 
-## Getting Started
+---
 
-First, run the development server:
+## 🌐 Live Demo
 
+🔗 [https://titan-yadak.vercel.app/](https://titan-yadak.vercel.app/)
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Home
+![Home](./screenshots/home.png)
+
+### 🛍️ Products
+![Products](./screenshots/products.png)
+
+### 📂 Category Filter
+![Category](./screenshots/category.png)
+
+### ℹ️ About
+![About](./screenshots/about.png)
+
+---
+
+## ✨ Features
+
+- 🗂️ **Product Categories** — Filter products by category
+- 🔍 **Product Detail** — Dedicated page per category
+- 📦 **Mock Data** — Static product data inside the project
+- 🌙 **Full RTL Support** — Right-to-left layout (Persian)
+- 📱 **Responsive Design** — Mobile, tablet, and desktop ready
+- ⚡ **App Router** — Built with App Router and Server Components
+- 🎨 **Modern UI** — Designed with shadcn/ui and Tailwind CSS
+
+---
+
+## 🛠️ Tech Stack
+
+| Tool | Version |
+|---|---|
+| [Next.js](https://nextjs.org/) | 14 (App Router) |
+| [TypeScript](https://www.typescriptlang.org/) | 5+ |
+| [Tailwind CSS](https://tailwindcss.com/) | 3+ |
+| [shadcn/ui](https://ui.shadcn.com/) | Latest |
+| Mock Data | Static JSON/TS |
+
+---
+
+## 📄 Pages
+
+| Page | Route |
+|---|---|
+| Home | `/` |
+| Products | `/productsPage` |
+| Category Filter | `/products?category=...` |
+| About | `/aboutus` |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18 or higher
+- npm or yarn
+
+### Installation
 ```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/titan-yadak.git
+
+# 2. Navigate to the project folder
+cd my-app
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open your browser and go to:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+http://localhost:3000
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+titan-yadak/
+├── app/
+│   ├── page.tsx          # Home
+│   ├── aboutus/
+│   │   └── page.tsx      # About
+│   └── productsPage/
+│       └── page.tsx      # Products + Category Filter
+├── components/           # Shared components
+├── data/                 # Mock product data
+└── public/
+└── images/
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 👨‍💻 Developer
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**ParsaFresh**
+Frontend Engineer — Next.js / React / TypeScript
+
+[![GitHub](https://img.shields.io/badge/GitHub-your--username-black?style=flat-square&logo=github)](https://github.com/your-username)
+
+---
+
+## 📅 Release
+
+- Released: July 31, 2026
+- Status: ✅ Completed
+
+---
+
+> Built with ❤️ to showcase a modern eCommerce architecture using Next.js 14
+
+
+Just replace `your-username` with your actual GitHub username and add the screenshots.

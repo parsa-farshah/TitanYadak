@@ -163,7 +163,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  href="/aboutUs"
+                  href="/aboutus"
                   className="text-[#d3d3d3] text-sm md:text-base hover:text-primary duration-300"
                 >
                   درباره ما
@@ -295,7 +295,7 @@ function Footer() {
             target="_blank"
             className="text-[12px] md:text-sm text-[#d3d3d3] hover:text-primary duration-300"
           >
-            Frontend Developer: Parsa Dehghan Pour Farashah
+            Frontend Developer: Parsa Fresh
           </a>
         </div>
       </div>

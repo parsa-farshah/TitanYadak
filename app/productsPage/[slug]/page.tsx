@@ -11,6 +11,12 @@ interface CategoryProductsPageProps {
   }>;
 }
 
+export function generateStaticParams() {
+  return CATEGORIES.map((category) => ({
+    slug: category.slug.trim().toLowerCase(),
+  }));
+}
+
 export default async function CategoryProductsPage({
   params,
 }: CategoryProductsPageProps) {

@@ -77,9 +77,9 @@ function NavigationAndLogo({ currentPage }: NavigationAndLogoProps) {
               </li>
               <li>
                 <a
-                  href="/aboutUs"
+                  href="/aboutus"
                   className={
-                    pathname === "/aboutUs"
+                    pathname === "/aboutus"
                       ? "text-primary"
                       : "text-black hover:text-primary"
                   }

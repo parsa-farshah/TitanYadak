@@ -25,7 +25,7 @@ const pages: NavItem[] = [
   { label: "خانه", href: "/" },
 
   { label: "محصولات", href: "/productsPage" },
-  { label: "درباره ما", href: "/aboutUs" },
+  { label: "درباره ما", href: "/aboutus" },
 ];
 
 interface MobileMenuProps {
