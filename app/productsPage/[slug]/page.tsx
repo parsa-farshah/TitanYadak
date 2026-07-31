@@ -1,6 +1,6 @@
 import { CATEGORIES } from "@/app/components/products/data/categories";
 import { products } from "@/app/components/products/data/products";
-import { ArrowLeftCircle } from "lucide-react";
+import { ChevronLeft, Home } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -42,6 +42,35 @@ export default async function CategoryProductsPage({
   return (
     <main className="bg-[#f5f5f5] py-10 md:py-14" dir="rtl">
       <div className="2xl:container 2xl:mx-auto px-5 md:px-10">
+        {/* Breadcrumb */}
+        <nav
+          aria-label="breadcrumb"
+          className="mb-6 flex items-center gap-2 text-sm text-gray-500"
+        >
+          <Link
+            href="/"
+            className="flex items-center gap-1 transition-colors hover:text-[#03071E]"
+          >
+            <Home className="h-4 w-4" />
+            خانه
+          </Link>
+
+          <ChevronLeft className="h-4 w-4 text-gray-400" />
+
+          <Link
+            href="/productsPage"
+            className="transition-colors hover:text-[#03071E]"
+          >
+            محصولات
+          </Link>
+
+          <ChevronLeft className="h-4 w-4 text-gray-400" />
+
+          <span className="font-medium text-[#03071E]">
+            {currentCategory.label}
+          </span>
+        </nav>
+
         <div className="mb-10 flex flex-col gap-3">
           <h1 className="text-2xl font-bold text-[#03071E] md:text-3xl">
             محصولات دسته {currentCategory.label}
@@ -63,7 +92,6 @@ export default async function CategoryProductsPage({
                 key={product.id}
                 className="group relative overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
               >
-
                 <div className="relative h-56 overflow-hidden">
                   <Image
                     src={product.image}
